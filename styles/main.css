@@ -10,9 +10,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Rubic';
 }
 body{
-  background-color: #0B0B19;
+  background-color: #d6d6d6;
+  color: black;
 }
 
 .container{
@@ -28,4 +30,41 @@ body{
   font-family: 'Rubick', sans-serif;
   font-weight: 100;
   letter-spacing: 5px;
+}
+.area{
+  margin-top: 20px;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  border-top: 1px dotted black;
+  padding-top: 20px;
+  gap: 30px;
+  margin-top: 20px;
+}
+.skill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill__img{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.skill__img:hover{
+  transform: scale(1.1);
+}
+
+.skill__subtitle{
+  margin-top: 5px;
+  max-width: 70px;
+  text-align: center;
+  word-wrap:break-word;
+  font-size: 11px;
 }

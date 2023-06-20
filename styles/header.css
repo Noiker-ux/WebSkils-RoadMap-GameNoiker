@@ -20,7 +20,7 @@
   }
   .header__avatar-nickname{
     font-family: 'Rubic';
-    color: #dadada;
+    color: #535353;
     font-size: 20px;
   }
   /* Правая часть шапки */
@@ -66,7 +66,7 @@
     border-radius: 1em;
     position: relative;
     cursor: pointer;
-    background: #030a6b;
+    background: #30313f;
     border: 1px solid #dadada;
     transition: all .1s linear;
     display: inline-block;
