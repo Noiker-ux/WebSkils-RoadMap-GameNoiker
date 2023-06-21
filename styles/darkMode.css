@@ -14,3 +14,6 @@ body.dark-mode .header__avatar-nickname{
 body.dark-mode .collection{
   background-color: #30313f;
 }
+body.dark-mode .skill__img {
+  filter: opacity(0.8);
+}
