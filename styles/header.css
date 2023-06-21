@@ -48,9 +48,11 @@
   }
   .donate__btn{
     background-color: #4898ff;
+    display: block;
   }
   .donate__btn-img{
     filter: invert(1);
+    margin: 7px;
   }
   /* Стилизация чекбокса темы */
   .theme-toggler__checkbox {
