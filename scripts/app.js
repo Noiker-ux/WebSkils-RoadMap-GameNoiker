@@ -2,9 +2,30 @@
 
 
 window.addEventListener('DOMContentLoaded',()=>{
-// Переменная LS для темы
+
+    // ==================== Замут с темной и светлой темлой ========================= 
+    // переманная LocalStorage для темы
     const RoadMapGamingTheme = 'NoikerRoadMapThemes.js'
-    
+    // базавая установка темы
+    localStorage.getItem(RoadMapGamingTheme)==null?localStorage.setItem(RoadMapGamingTheme,false):[];
+    // проверка какую включить 
+    if (localStorage.getItem(RoadMapGamingTheme)!='false'){
+        document.body.classList.add("dark-mode")
+        document.querySelector('.theme-toggler__checkbox').checked=true;
+    }
+    // переключение темы по клику чекбокса
+    document.querySelector('.theme-toggler__switch').addEventListener('click',()=>{
+        document.body.classList.toggle("dark-mode")
+        if (document.body.classList.contains("dark-mode")){
+            localStorage.setItem(RoadMapGamingTheme,true)
+        } else {
+            localStorage.setItem(RoadMapGamingTheme,false)
+        }
+    });
+    // ===================== Конец замута с темной и светлой темой ===========================
+    //........................................................................................ 
+    // ===================== Замут с окном FAQ ===============================================
+    // HTML окна
     const str=`
     <div class="faq" style="display: none; width: 500px;" id="FAQhidden">
         <h3 class="faq__title">Web Skills FAQ</h3>
@@ -23,20 +44,17 @@ window.addEventListener('DOMContentLoaded',()=>{
             <p class="faq__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquam laudantium perferendis eos quo? Harum repudiandae dolor ipsam eligendi? Blanditiis neque ab dolores distinctio delectus aliquam sed ut numquam fugit?
             Mollitia ipsa facere quibusdam, tempora repudiandae optio consequuntur tenetur distinctio iure tempore suscipit ad commodi nisi!</p>
         </div>
-    </div>`;
-
+    </div>
+    `;
+    // Открытие окна
     document.getElementById('faq__btn-id').addEventListener('click',()=>{
-            $.fancybox.open({
-                src: str,
-                type: 'inline',
-            });
+        $.fancybox.open({
+            src: str,
+            type: 'inline',
+        });
     })
-
-
-    // переключение темы светлая темная
-    document.querySelector('.theme-toggler__switch').addEventListener('click',()=>{
-        document.body.classList.toggle("dark-mode")
-    });
-
+    // ===================== Конец замута с окном FAQ ========================================
+    // .......................................................................................
+    
 
 });

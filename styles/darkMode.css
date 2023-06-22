@@ -17,3 +17,6 @@ body.dark-mode .collection{
 body.dark-mode .skill__img {
   filter: opacity(0.8);
 }
+body.dark-mode .fancybox-content{
+ background-color: #292a36d5;
+}
