@@ -386,6 +386,44 @@ INSERT INTO Skills SET Name_skill ='Accessibility', Ico_skill=LOAD_FILE('/images
 INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-design.svg'), Description_skill='Learn about some of the best practices when designing.', id_road=19;
 
 
+INSERT INTO Skills SET Name_skill ='Streams', Ico_skill=LOAD_FILE('/images/streams.svg'), Description_skill='Learn about streams and how they can help you effeciently transporting data.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Media Streams', Ico_skill=LOAD_FILE('/images/media-streams.svg'), Description_skill='Learn how to use the media recorder API to record media streams.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Media Recorder', Ico_skill=LOAD_FILE('/images/media-recorder.svg'), Description_skill='Learn how to use the media recorder API to record media streams.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Web RTC', Ico_skill=LOAD_FILE('/images/web-rtc.svg'), Description_skill='Learn how to use Web RTC for establishing real-time communication.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Screen Capture', Ico_skill=LOAD_FILE('/images/screen-capture.svg'), Description_skill='Learn how to use the Screen Capture API for recording the screen.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Generators', Ico_skill=LOAD_FILE('/images/generators.svg'), Description_skill='Learn how to use generator functions to define iterative algorithms by writing functions whose execution is not continuous.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Speech Synthesis', Ico_skill=LOAD_FILE('/images/speech-synthesis.svg'), Description_skill='Learn how the speech synthesis API can help you converting text to speech.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Web Sockets', Ico_skill=LOAD_FILE('/images/web-sockets.svg'), Description_skill='Learn about web sockets and how you can push data to your web app.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Geolocation', Ico_skill=LOAD_FILE('/images/geolocation.svg'), Description_skill='Learn how to ask the user for permission to the location.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Device orientation & motion', Ico_skill=LOAD_FILE('/images/device-orientation-and-motion.svg'), Description_skill='Learn how to measure the orientation and motion of the device.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Fullscreen', Ico_skill=LOAD_FILE('/images/fullscreen.svg'), Description_skill='Learn how to use the fullscreen API to give the user a more immersive experience when needed.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Variable Fonts', Ico_skill=LOAD_FILE('/images/variable-fonts.svg'), Description_skill='Learn how to use variable fonts and how it is possible to customize fonts without the need for loading more.', id_road=20;
+INSERT INTO Skills SET Name_skill ='HTTP/2', Ico_skill=LOAD_FILE('/images/http-2.svg'), Description_skill='Learn about the faster and more convenient HTTP/2 protocol.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Payment Request API', Ico_skill=LOAD_FILE('/images/spacing.svg'), Description_skill='Learn about the payment request API and how it can help monetize your web app.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Web Audio', Ico_skill=LOAD_FILE('/images/web-audio.svg'), Description_skill='Learn how to use the Web Audio API to add audio to your web app.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Observers', Ico_skill=LOAD_FILE('/images/observers.svg'), Description_skill='Learn about the observer pattern and get comfortable concepts such as subjects and observers.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Mutation Observer', Ico_skill=LOAD_FILE('/images/mutation-observer.svg'), Description_skill='Learn how to use the Mutation Observer API to get informed about changes to the DOM.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Intersection Observer', Ico_skill=LOAD_FILE('/images/intersection-observer.svg'), Description_skill='Learn how to use the Intersection Observer API can help you detect when an element is visible on the screen.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Resize Observer', Ico_skill=LOAD_FILE('/images/resize-observer.svg'), Description_skill='Learn how to use the Resize Observer API to get informed when the element resizes.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Performance Observer', Ico_skill=LOAD_FILE('/images/performance-observer.svg'), Description_skill='Learn how the Performance Observer API can help you get information about the performance of your web app.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Scrollsnapping', Ico_skill=LOAD_FILE('/images/scrollsnapping.svg'), Description_skill='Learn about the Scrollsnapping API and how it can help you provide an intuitive experience when scrolling.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Web Assembly', Ico_skill=LOAD_FILE('/images/web-assembly.svg'), Description_skill='Learn about Web Assembly and how it opens up the playing field for new types of web apps.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Beacon', Ico_skill=LOAD_FILE('/images/beacon.svg'), Description_skill='Learn how the Beacon API can help you send data to endpoints before the user closes the page.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Clipboard', Ico_skill=LOAD_FILE('/images/clipboard.svg'), Description_skill='Learn about the Clipboard API and how it can help you copy and paste data.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Share', Ico_skill=LOAD_FILE('/images/share.svg'), Description_skill='Learn how the Web Share API can help users sharing your web app.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Performance API', Ico_skill=LOAD_FILE('/images/performance-api.svg'), Description_skill='Learn about the Performance API and how it can help you monitor the performance of the device.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Gamepad API', Ico_skill=LOAD_FILE('/images/gamepad-api.svg'), Description_skill='Learn how the Gamepad API can help you integrate with various controllers such as an x-box or playstation controller', id_road=20;
+INSERT INTO Skills SET Name_skill ='Speech Recognition', Ico_skill=LOAD_FILE('/images/speech-recognition.svg'), Description_skill='Learn how to use the Speech Recognition API to analyze speech.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Interaction Media Queries', Ico_skill=LOAD_FILE('/images/interaction-media-queries.svg'), Description_skill='Learn how to use Interaction Media Queries to optimize the user experience for the specific type of device.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Browser Extensions', Ico_skill=LOAD_FILE('/images/browser-extensions.svg'), Description_skill='Learn how to build browser extensions to enhance the functionality of your browser.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Pointer Lock API', Ico_skill=LOAD_FILE('/images/pointer-lock-api.svg'), Description_skill='Learn how to use the Pointer Lock API to get the raw mouse movement and lock the target of mouse events to a single element.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Picture In Picture', Ico_skill=LOAD_FILE('/images/picture-in-picture.svg'), Description_skill='Learn how to use the Picture-In-Picture API to watch videos in a floating window (always on top of other windows).', id_road=20;
+INSERT INTO Skills SET Name_skill ='Proxies', Ico_skill=LOAD_FILE('/images/proxies.svg'), Description_skill='Learn how to use proxies to intercept certain operations and implement custom behaviors.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Houdini', Ico_skill=LOAD_FILE('/images/houdini.svg'), Description_skill='Learn about the Houdini project and get excited about the future of CSS.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Project Fugu', Ico_skill=LOAD_FILE('/images/project-fugu.svg'), Description_skill='Learn about Project Fugu project and get excited about the future of the Web.', id_road=20;
+INSERT INTO Skills SET Name_skill ='Web Authentication API', Ico_skill=LOAD_FILE('/images/web-authentication-api.svg'), Description_skill='Learn how to use the Web Authentication API to provide a strong authentication with public key cryptography.', id_road=20;
+
+----
 
 
 INSERT INTO Users SET Name_User ='Alex', Surname_User='Alexov', NickName_User='Alex111', Login_User='alex@mail.ru', Password_User='123qwe', id_role=1;
