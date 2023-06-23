@@ -1,0 +1,399 @@
+CREATE DATABASE IF NOT EXISTS `NoikerSkills`;
+
+USE `NoikerSkills`;
+
+CREATE TABLE `Roles`( 
+id_role int NOT NULL AUTO_INCREMENT,
+NameRole char(30) NOT NULL,
+PRIMARY KEY (id_role) 
+)ENGINE=InnoDB;
+
+CREATE TABLE `Users`( 
+id_user int NOT NULL AUTO_INCREMENT,
+Name_User char(30) NOT NULL,
+Surname_User char(30) NOT NULL,
+NickName_User char(30) NOT NULL,
+Login_User char(30) NOT NULL,
+Password_User char(30) NOT NULL,
+id_role int NOT NULL,
+PRIMARY KEY (id_user),
+FOREIGN KEY (id_role)  REFERENCES Roles(id_role)
+)ENGINE=InnoDB;
+
+CREATE TABLE `Areas`( 
+id_area int NOT NULL AUTO_INCREMENT,
+Title_area char(90) NOT NULL,
+PRIMARY KEY (id_area) 
+)ENGINE=InnoDB;
+
+CREATE TABLE `RoadEducation`( 
+id_road int NOT NULL AUTO_INCREMENT,
+Name_road char(90) NULL,
+id_area int NOT NULL,
+PRIMARY KEY (id_road),
+FOREIGN KEY (id_area)  REFERENCES Areas(id_area)
+)ENGINE=InnoDB;
+
+CREATE TABLE `Skills`( 
+id_skill int NOT NULL AUTO_INCREMENT,
+Name_skill char(90) NOT NULL,
+ThreeObject_skill blob NULL,
+Ico_skill blob NOT NULL,
+Description_skill text NOT NULL,
+id_road int NOT NULL,
+PRIMARY KEY (id_skill),
+FOREIGN KEY (id_road)  REFERENCES RoadEducation(id_road)
+)ENGINE=InnoDB;
+
+CREATE TABLE `Helpful_links`(
+id_link int NOT NULL AUTO_INCREMENT,
+link text NOT NULL,
+id_skill int NOT NULL,
+PRIMARY KEY (id_link),
+FOREIGN KEY (id_skill)  REFERENCES Skills(id_skill)
+)ENGINE=InnoDB;
+
+CREATE TABLE `Questions`( 
+id_question int NOT NULL AUTO_INCREMENT,
+question text NOT NULL,
+Answer1 text NULL,
+Answer2 text NULL,
+Answer3 text NULL,
+Answer4 text NULL,
+True_answer text NOT NULL,
+Explanation text NOT NULL,
+id_skill int NOT NULL,
+PRIMARY KEY (id_question),
+FOREIGN KEY (id_skill)  REFERENCES Skills(id_skill)
+)ENGINE=InnoDB;
+
+INSERT INTO Roles SET NameRole='Пользователь';
+INSERT INTO Roles SET NameRole='Модератор';
+INSERT INTO Roles SET NameRole='Владелец';
+
+INSERT INTO Areas SET Title_area='FUNDAMENTALS';
+INSERT INTO Areas SET Title_area='ACCESSIBILITY';
+INSERT INTO Areas SET Title_area='WEB COMPONENTS';
+INSERT INTO Areas SET Title_area='PROGRESSIVE WEBAPPS';
+INSERT INTO Areas SET Title_area='BUILD TOOLS';
+INSERT INTO Areas SET Title_area='FRAMEWORKS & LIBRARIES';
+INSERT INTO Areas SET Title_area='TESTING';
+INSERT INTO Areas SET Title_area='ARCHITECTURE & PARADIGMS';
+INSERT INTO Areas SET Title_area='TEAM COLLABORATION';
+INSERT INTO Areas SET Title_area='DESIGN & UX';
+INSERT INTO Areas SET Title_area='THE MODERN WEB';
+INSERT INTO Areas SET Title_area='ALGORITHMS & DATA STRUCTURES';
+INSERT INTO Areas SET Title_area='DATABASES & SERVERS';
+
+INSERT INTO RoadEducation SET Name_road='HTML', id_area=1;
+INSERT INTO RoadEducation SET Name_road='CSS', id_area=1;
+INSERT INTO RoadEducation SET Name_road='Javascript', id_area=1;
+INSERT INTO RoadEducation SET Name_road='The Browser', id_area=1;
+INSERT INTO RoadEducation SET Name_road='Accessibility', id_area=2;
+INSERT INTO RoadEducation SET Name_road='Web components', id_area=3;
+INSERT INTO RoadEducation SET Name_road='API', id_area=4;
+INSERT INTO RoadEducation SET Name_road='Loading Performance', id_area=4;
+INSERT INTO RoadEducation SET Name_road='Rendering Performance', id_area=4;
+INSERT INTO RoadEducation SET Name_road='Security', id_area=4;
+INSERT INTO RoadEducation SET Name_road='Audits', id_area=4;
+INSERT INTO RoadEducation SET Name_road='Build tools', id_area=5;
+INSERT INTO RoadEducation SET Name_road='Frameworks & Libraries', id_area=6;
+INSERT INTO RoadEducation SET Name_road='Testing', id_area=7;
+INSERT INTO RoadEducation SET Name_road='Paradigms', id_area=8;
+INSERT INTO RoadEducation SET Name_road='Architecture', id_area=8;
+INSERT INTO RoadEducation SET Name_road='Version Control', id_area=9;
+INSERT INTO RoadEducation SET Name_road='Management', id_area=9;
+INSERT INTO RoadEducation SET Name_road='Design & UX', id_area=10;
+INSERT INTO RoadEducation SET Name_road='The modern WEB', id_area=11;
+INSERT INTO RoadEducation SET Name_road='Data structures', id_area=12;
+INSERT INTO RoadEducation SET Name_road='Analysis', id_area=12;
+INSERT INTO RoadEducation SET Name_road='Algorithms', id_area=12;
+INSERT INTO RoadEducation SET Name_road='Databases', id_area=13;
+INSERT INTO RoadEducation SET Name_road='Servers', id_area=13;
+
+INSERT INTO Skills SET Name_skill ='Syntax', Ico_skill=LOAD_FILE('/images/syntax.svg'), Description_skill='Learn the basics of HTML and get comfortable with it's syntax and main concepts.', id_road=1;
+INSERT INTO Skills SET Name_skill ='Basic-tags', Ico_skill=LOAD_FILE('/images/basic-tags.svg'), Description_skill='Get familiar with the basic HTML tags.', id_road=1;
+INSERT INTO Skills SET Name_skill ='Forms', Ico_skill=LOAD_FILE('/images/forms.svg'), Description_skill='Learn how to design efficient forms, validating them effectively and keeping the user informed along the way.', id_road=1;
+INSERT INTO Skills SET Name_skill ='SEO', Ico_skill=LOAD_FILE('/images/seo.svg'), Description_skill='Learn how to make your content search-friendly.', id_road=1;
+INSERT INTO Skills SET Name_skill ='Discoverable Content', Ico_skill=LOAD_FILE('/images/discoverable-content.svg'), Description_skill='Learn how to structure your HTML in a way that provides a rich experience when sharing it online.', id_road=1;
+INSERT INTO Skills SET Name_skill ='Svg', Ico_skill=LOAD_FILE('/images/svg.svg'), Description_skill='Learn how to work with SVG files to make graphics look crisp across all screen resolutions.', id_road=1;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices.svg'), Description_skill='Learn the best practices of writing HTML.', id_road=1;
+
+
+INSERT INTO Skills SET Name_skill ='Syntax', Ico_skill=LOAD_FILE('/images/syntax_css.svg'), Description_skill='Learn the basics of CSS and get comfortable with it's syntax and main concepts.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Selectors', Ico_skill=LOAD_FILE('/images/selectors.svg'), Description_skill='Learn about CSS selectors and how to effeciently target DOM elements.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Specificity', Ico_skill=LOAD_FILE('/images/specificity.svg'), Description_skill='Learn what specificity means and how to use it when writing CSS.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Pseudo Selectors', Ico_skill=LOAD_FILE('/images/pseudo-selectors.svg'), Description_skill='Learn how to use pseudo selectors.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Box Model', Ico_skill=LOAD_FILE('/images/box-model.svg'), Description_skill='Learn what the CSS box model means.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Margin Collapsing', Ico_skill=LOAD_FILE('/images/margin-collapsing.svg'), Description_skill='Learn about margin collapsing.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Colors', Ico_skill=LOAD_FILE('/images/colors.svg'), Description_skill='Learn the different ways you can define colors in CSS.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Calc', Ico_skill=LOAD_FILE('/images/calc.svg'), Description_skill='Learn how to use the CSS calc function.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Layout', Ico_skill=LOAD_FILE('/images/layout.svg'), Description_skill='Learn the different layout types for web.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Flex', Ico_skill=LOAD_FILE('/images/flex.svg'), Description_skill='Learn how to create layouts using flexbox', id_road=2;
+INSERT INTO Skills SET Name_skill ='Grid', Ico_skill=LOAD_FILE('/images/grid.svg'), Description_skill='Learn how to create layouts using CSS Grid.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Transforms', Ico_skill=LOAD_FILE('/images/transforms.svg'), Description_skill='Learn the different ways to transform elements through CSS.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Animations', Ico_skill=LOAD_FILE('/images/animations.svg'), Description_skill='Learn how to animate elements through CSS using keyframes.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Responsive Design', Ico_skill=LOAD_FILE('/images/responsive-design.svg'), Description_skill='Learn how to make your website responsive so it works across different screen sizes.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Media Queries', Ico_skill=LOAD_FILE('/images/media-queries.svg'), Description_skill='Learn how use media queries to build responsive layout.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Relative Units', Ico_skill=LOAD_FILE('/images/relative-units.svg'), Description_skill='Learn how to use relative units for properties such as font sizes and spacing.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Images', Ico_skill=LOAD_FILE('/images/images.svg'), Description_skill='Learn how to make images responsive, always showing the best possible version for the screen size.', id_road=2;
+INSERT INTO Skills SET Name_skill ='CSS Variables', Ico_skill=LOAD_FILE('/images/css-variables.svg'), Description_skill='Learn how to define and use CSS variables.', id_road=2;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-css.svg'), Description_skill='Learn the best practices of writing CSS.', id_road=2;
+
+
+
+
+INSERT INTO Skills SET Name_skill ='Syntax', Ico_skill=LOAD_FILE('/images/syntax-js.svg'), Description_skill='Learn the basics of Javascript and get comfortable with it's syntax and main concepts.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Spread', Ico_skill=LOAD_FILE('/images/spread.svg'), Description_skill='Learn how the spread syntax can help you when working with arrays.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Destructuring', Ico_skill=LOAD_FILE('/images/Destructuring.svg'), Description_skill='Learn how destructuring can help you when working with objects.', id_road=3;
+INSERT INTO Skills SET Name_skill ='DOM', Ico_skill=LOAD_FILE('/images/dom.svg'), Description_skill='Learn how the HTML is represented as objects that comprise the structure and content of a document.', id_road=3;
+INSERT INTO Skills SET Name_skill ='DOM Manipulation', Ico_skill=LOAD_FILE('/images/dom-manipulation.svg'), Description_skill='Learn how to query HTML elements through Javascript and manipulate them.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Events', Ico_skill=LOAD_FILE('/images/events.svg'), Description_skill='Learn how to dispatch and listen for events.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Objects', Ico_skill=LOAD_FILE('/images/objects.svg'), Description_skill='Learn how to create and use objects.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Prototype', Ico_skill=LOAD_FILE('/images/prototype.svg'), Description_skill='Learn how to extend objects and functions through its prototype.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Classes', Ico_skill=LOAD_FILE('/images/classes.svg'), Description_skill='Learn how to define and use classes. Get somewhat comfortable with some of the object oriented concepts such as inheritence and encapsulation.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Regex', Ico_skill=LOAD_FILE('/images/regex.svg'), Description_skill='Learn how to use regex to extract information from strings.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Template Literals', Ico_skill=LOAD_FILE('/images/template-literals.svg'), Description_skill='Learn how template literals and tagged templates and help you manipulate strings.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Promises', Ico_skill=LOAD_FILE('/images/promises.svg'), Description_skill='Learn how to use promises and what asynchronous code means', id_road=3;
+INSERT INTO Skills SET Name_skill ='Callbacks', Ico_skill=LOAD_FILE('/images/callbacks.svg'), Description_skill='Learn how to use callbacks and why they are not always a good idea.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Async/Await', Ico_skill=LOAD_FILE('/images/async-await.svg'), Description_skill='Learn how to use the async and await keywords to make it easier to write asynchronous code.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Fetch', Ico_skill=LOAD_FILE('/images/fetch.svg'), Description_skill='Learn how to use the fetch API to fetch data.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Web Animations', Ico_skill=LOAD_FILE('/images/web-animations.svg'), Description_skill='Learn how to use web animations to animate elements in the DOM.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Modules', Ico_skill=LOAD_FILE('/images/modules.svg'), Description_skill='Learn how to modularize your code into ES6 modules using the export and import keywords.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Intl', Ico_skill=LOAD_FILE('/images/intl.svg'), Description_skill='Learn how to localize your website using the Intl API.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Canvas', Ico_skill=LOAD_FILE('/images/canvas.svg'), Description_skill='Learn how to paint graphics onto a canvas.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Documentation', Ico_skill=LOAD_FILE('/images/documentation.svg'), Description_skill='Learn how to create good documentation and why it is important.', id_road=3;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-js.svg'), Description_skill='Learn the best practices of writing Javascript.', id_road=3;
+
+
+
+
+INSERT INTO Skills SET Name_skill ='Standardization', Ico_skill=LOAD_FILE('/images/standardization.svg'), Description_skill='Learn why web standards are important and how new specifications are standardised.', id_road=4;
+INSERT INTO Skills SET Name_skill ='W3C', Ico_skill=LOAD_FILE('/images/w3c.svg'), Description_skill='Learn what W3C are doing and how they are moving the web forward.', id_road=4;
+INSERT INTO Skills SET Name_skill ='TC39', Ico_skill=LOAD_FILE('/images/tc39.svg'), Description_skill='Learn what TC39 are doing and how they are moving the web forward.', id_road=4;
+INSERT INTO Skills SET Name_skill ='WHATWG', Ico_skill=LOAD_FILE('/images/whatwg.svg'), Description_skill='Learn what WHATWG are doing and how they are moving the web forward.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Specifications', Ico_skill=LOAD_FILE('/images/specifications.svg'), Description_skill='Learn how to read specifications developed by the standards committees.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Browser Engines', Ico_skill=LOAD_FILE('/images/browser-engines.svg'), Description_skill='Learn what a browser engine is and get an overview of the browser landscape and market share.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Webkit', Ico_skill=LOAD_FILE('/images/webkit.svg'), Description_skill='Learn about the Webkit browser engine', id_road=4;
+INSERT INTO Skills SET Name_skill ='Blink', Ico_skill=LOAD_FILE('/images/blink.svg'), Description_skill='Learn about the Blink browser engine.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Gecko', Ico_skill=LOAD_FILE('/images/gecko.svg'), Description_skill='Learn about the Gecko browser engine.', id_road=4;
+INSERT INTO Skills SET Name_skill ='HTTP', Ico_skill=LOAD_FILE('/images/http.svg'), Description_skill='Learn how data is distributed through the HTTP protocol.', id_road=4;
+INSERT INTO Skills SET Name_skill ='The Internet', Ico_skill=LOAD_FILE('/images/the-internet.svg'), Description_skill='Learn the basics of how the internet works.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Polyfills', Ico_skill=LOAD_FILE('/images/polyfills.svg'), Description_skill='Learn how it is possible to use polyfills to increase the browser support for your website.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Debugging', Ico_skill=LOAD_FILE('/images/debugging.svg'), Description_skill='Learn about the basics concepts of debugging.', id_road=4;
+INSERT INTO Skills SET Name_skill ='Developer console', Ico_skill=LOAD_FILE('/images/developer-console.svg'), Description_skill='Learn how to use the developer console to debug your code.', id_road=4;
+
+
+
+INSERT INTO Skills SET Name_skill ='The why', Ico_skill=LOAD_FILE('/images/the-why.svg'), Description_skill='Learn what accessibility is and why it is important.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Screen Readers', Ico_skill=LOAD_FILE('/images/screen-readers.svg'), Description_skill='Learn about assistive technology such as screen readers that reads sections of the page aloud based on the current focus.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Accessibility tree', Ico_skill=LOAD_FILE('/images/accessibility-tree.svg'), Description_skill='Learn about the accessibility tree and how assistive technology uses it.', id_road=5;
+INSERT INTO Skills SET Name_skill ='ARIA', Ico_skill=LOAD_FILE('/images/aria.svg'), Description_skill='Learn how to use ARIA descriptions an labels to help assistive technology understanding your website.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Accessible HTML', Ico_skill=LOAD_FILE('/images/accessible-html.svg'), Description_skill='Learn how to write HTML in such as way that assistive technology better understands it.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Alt Text', Ico_skill=LOAD_FILE('/images/alt-text.svg'), Description_skill='Learn how to use the alt attribute to provide a useful text alternative to this image.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Accessible CSS', Ico_skill=LOAD_FILE('/images/accessible-css.svg'), Description_skill='Learn how to write CSS in such as way that assistive technology better understands it.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Accessible Forms', Ico_skill=LOAD_FILE('/images/accessible-forms.svg'), Description_skill='Learn how to build accessible forms that makes it usable to as many people as possible.', id_road=5;
+INSERT INTO Skills SET Name_skill ='UI States', Ico_skill=LOAD_FILE('/images/ui-states.svg'), Description_skill='Learn how to make the state of each UI element clear.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Keyboard Accessibility', Ico_skill=LOAD_FILE('/images/keyboard-accessibility.svg'), Description_skill='Learn how to make it easy for keyboard users to navigate your site.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Focus', Ico_skill=LOAD_FILE('/images/focus.svg'), Description_skill='Learn how to create a sensible tab order and how to make it easy for the users to locate the currently focused element.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Accessible Colors', Ico_skill=LOAD_FILE('/images/accessible-colors.svg'), Description_skill='Learn how to select colors in such a way that users, including those with visual disabilities, can perceive the content on the page.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Laws & Policies', Ico_skill=LOAD_FILE('/images/laws-and-policies.svg'), Description_skill='Learn about the governmental policies related to web accessibility.', id_road=5;
+INSERT INTO Skills SET Name_skill ='Audits', Ico_skill=LOAD_FILE('/images/audits.svg'), Description_skill='Learn how to conduct an accessibility review to improve the overall experience of using your site. Remember, good accessibility equals good UX!', id_road=5;
+
+
+
+INSERT INTO Skills SET Name_skill ='Custom Elements', Ico_skill=LOAD_FILE('/images/custom-elements.svg'), Description_skill='Learn how to create new HTML tags with Custom Elements.', id_road=6;
+INSERT INTO Skills SET Name_skill ='HTML Templates', Ico_skill=LOAD_FILE('/images/html-templates.svg'), Description_skill='Learn how to use HTML templates to create flexible templates that can then be used to populate the Shadow DOM.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Shadow DOM', Ico_skill=LOAD_FILE('/images/shadow-dom.svg'), Description_skill='Learn how to encapsulate your CSS using Shadow DOM.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Shadow Parts', Ico_skill=LOAD_FILE('/images/shadow-parts.svg'), Description_skill='Learn how to style the inside of a shadow tree from outside of that Shadow Tree by using Shadow Parts.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Slots', Ico_skill=LOAD_FILE('/images/slots.svg'), Description_skill='Learn how to compose Custom Elements by using slots.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-webComponents.svg'), Description_skill='Get familiar with best practices when it comes to building Web Components.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Constructible Stylesheets', Ico_skill=LOAD_FILE('/images/constructible-stylesheets.svg'), Description_skill='Learn how the Constructible Stylesheets proposal enables reusable styles when using shadow dom.', id_road=6;
+INSERT INTO Skills SET Name_skill ='Form Participation', Ico_skill=LOAD_FILE('/images/form-participation.svg'), Description_skill='Learn how the Form Participation API proposal enables elements, other than built-in form control elements, to participate in form submission and validation.', id_road=6;
+
+
+INSERT INTO Skills SET Name_skill ='Storage', Ico_skill=LOAD_FILE('/images/storage.svg'), Description_skill='Learn how to store data for your web app.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Routing', Ico_skill=LOAD_FILE('/images/routing.svg'), Description_skill='Learn what routing means in single page applications.', id_road=7;
+INSERT INTO Skills SET Name_skill ='History API', Ico_skill=LOAD_FILE('/images/history-api.svg'), Description_skill='Learn how to use the history API to add single page applicaiton routing to your web app.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Service Workers', Ico_skill=LOAD_FILE('/images/service-workers.svg'), Description_skill='Learn how to register a service worker to provide a rich native-like experience.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Offline first', Ico_skill=LOAD_FILE('/images/offline-first.svg'), Description_skill='Learn how to make your web app working offline with an offline first approach.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Push notifications', Ico_skill=LOAD_FILE('/images/push-notifications.svg'), Description_skill='Learn how to add push notifications to your web app.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Web App manifest', Ico_skill=LOAD_FILE('/images/web-app-manifest.svg'), Description_skill='Learn how to tell the browser about your web app and how it should behave when 'installed' by creating a web app manifest.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Add to homescreen', Ico_skill=LOAD_FILE('/images/add-to-homescreen.svg'), Description_skill='Learn how to make your web app installable.', id_road=7;
+INSERT INTO Skills SET Name_skill ='Pointer Events', Ico_skill=LOAD_FILE('/images/pointer-events.svg'), Description_skill='Learn how to handle inputs from pointing devices such as a mouse, pen/stylus or touch.', id_road=7;
+
+
+INSERT INTO Skills SET Name_skill ='App shell', Ico_skill=LOAD_FILE('/images/app-shell.svg'), Description_skill='Learn how to use an app shell to provide an instant and reliable experience to users on repeat visits', id_road=8;
+INSERT INTO Skills SET Name_skill ='Render-Blocking Resources', Ico_skill=LOAD_FILE('/images/render-blocking-resources.svg'), Description_skill='Learn about render-blocking resources and why they are bad for the user-experience.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Compression', Ico_skill=LOAD_FILE('/images/compression.svg'), Description_skill='Learn how to minimize the overall download size by optimizing and compressing resources.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Performance metrics', Ico_skill=LOAD_FILE('/images/performance-metrics.svg'), Description_skill='Learn why it is important to measure performance and which metrics you should prioritize.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Largest Contentful Paint', Ico_skill=LOAD_FILE('/images/largest-contentful-paint.svg'), Description_skill='Learn about Largest Contentful Paint and how it impacts the overall performance.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Total Blocking Time', Ico_skill=LOAD_FILE('/images/total-blocking-time.svg'), Description_skill='Learn about Total Blocking Time and how it impacts the overall performance.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Time to Interactive', Ico_skill=LOAD_FILE('/images/time-to-interactive.svg'), Description_skill='Learn about Time to Interactive and how it impacts the overall performance.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Lazy Loading', Ico_skill=LOAD_FILE('/images/lazy-loading.svg'), Description_skill='Learn how to use lazy loading to lower the initial page payload and load time.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Dynamic Import', Ico_skill=LOAD_FILE('/images/dynamic-import.svg'), Description_skill='Learn how to use dynamic import to lazy load javascript.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Offscreen images', Ico_skill=LOAD_FILE('/images/offscreen-images.svg'), Description_skill='Learn why offscreen images increase the load time and how to avoid them by lazy loading images.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Critical Request Chains', Ico_skill=LOAD_FILE('/images/critical-request-chains.svg'), Description_skill='Learn about the critical request chains and how to find them in your web app.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Tree shaking', Ico_skill=LOAD_FILE('/images/tree-shaking.svg'), Description_skill='Learn how to use tree shaking to eliminate dead code.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Codesplitting', Ico_skill=LOAD_FILE('/images/codesplitting.svg'), Description_skill='Learn about codesplitting an how dividing your code into multiple chunks makes your web app faster.', id_road=8;
+INSERT INTO Skills SET Name_skill ='PRPL Pattern', Ico_skill=LOAD_FILE('/images/prpl-pattern.svg'), Description_skill='Learn how to use the PRPL pattern to make web apps more performant.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Resource Prioritization', Ico_skill=LOAD_FILE('/images/resource-prioritization.svg'), Description_skill='Learn about resource prioritization and how to inform the browser about the importance of a resource.', id_road=8;
+INSERT INTO Skills SET Name_skill ='Caching', Ico_skill=LOAD_FILE('/images/caching.svg'), Description_skill='Learn about caching and how it can be uses to make web apps load faster.', id_road=8;
+
+
+INSERT INTO Skills SET Name_skill ='Rendering', Ico_skill=LOAD_FILE('/images/rendering.svg'), Description_skill='Learn about rendering, how a page is rendered and why it is important to keep your web app interactive and smooth running.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Event loop', Ico_skill=LOAD_FILE('/images/event-loop.svg'), Description_skill='Learn about the event loop and how Javascript simulate like it’s running our commands in a multi-thread environment.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Microtask', Ico_skill=LOAD_FILE('/images/microtask.svg'), Description_skill='Learn about microtasks and the microtask queue.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Stack', Ico_skill=LOAD_FILE('/images/stack.svg'), Description_skill='Learn about the stack and how to investigate the staack trace when debugging.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Heap', Ico_skill=LOAD_FILE('/images/heap.svg'), Description_skill='Learn about the heap and how to investigate the heap snapshots when debugging.', id_road=9;
+INSERT INTO Skills SET Name_skill ='RAIL Model', Ico_skill=LOAD_FILE('/images/rail-model.svg'), Description_skill='Learn how to use the RAIL model to ensure a good user experience.', id_road=9;
+INSERT INTO Skills SET Name_skill ='requestAnimationFrame', Ico_skill=LOAD_FILE('/images/requestanimationframe.svg'), Description_skill='Learn how to use the requestAnimationFrame API to create butter-smooth animations.', id_road=9;
+INSERT INTO Skills SET Name_skill ='requestIdleCallback', Ico_skill=LOAD_FILE('/images/requestidlecallback.svg'), Description_skill='Learn how to use the requestIdleCallback to defer heavy tasks.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Critical Rendering Path', Ico_skill=LOAD_FILE('/images/critical-rendering-path.svg'), Description_skill='Learn about the critical rendering path and how to identify it.', id_road=9;
+INSERT INTO Skills SET Name_skill ='The Pixel Pipeline', Ico_skill=LOAD_FILE('/images/the-pixel-pipeline.svg'), Description_skill='Learn about the five key points in the pixels-to-screen pipeline.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Style calculations', Ico_skill=LOAD_FILE('/images/style-calculations.svg'), Description_skill='Learn how to optimize your CSS to avoid heavy style calculations.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Transforms', Ico_skill=LOAD_FILE('/images/transforms-render-perfomance.svg'), Description_skill='Learn about transforms and how it is possible to avoid both layout and paint.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Paint areas', Ico_skill=LOAD_FILE('/images/paint-areas.svg'), Description_skill='Learn about paint areas and how it is possible to reduce them.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Layout Trashing', Ico_skill=LOAD_FILE('/images/layout-trashing.svg'), Description_skill='Learn about layout trashing and how to avoid it.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Layers', Ico_skill=LOAD_FILE('/images/layers.svg'), Description_skill='Learn about layers and how to promote an element to another layer.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Debounce', Ico_skill=LOAD_FILE('/images/debounce.svg'), Description_skill='Learn how to debounce computationally expensive code to avoid blocking the UI.', id_road=9;
+INSERT INTO Skills SET Name_skill ='CSS Containment', Ico_skill=LOAD_FILE('/images/css-containment.svg'), Description_skill='Learn how to use CSS containment to improve the performance of your web app.', id_road=9;
+INSERT INTO Skills SET Name_skill ='Web Workers', Ico_skill=LOAD_FILE('/images/web-workers.svg'), Description_skill='Learn how to use web workers to run a script operation in a background thread separate from the main execution thread.', id_road=9;
+
+
+INSERT INTO Skills SET Name_skill ='HTTPS', Ico_skill=LOAD_FILE('/images/https.svg'), Description_skill='Learn about HTTPS and why a website should always be protected with HTTPS.', id_road=10;
+INSERT INTO Skills SET Name_skill ='Browser Sandbox', Ico_skill=LOAD_FILE('/images/browser-sandbox.svg'), Description_skill='Learn about the sandbox security mechanism and how it restricts the execution environment.', id_road=10;
+INSERT INTO Skills SET Name_skill ='OWASP', Ico_skill=LOAD_FILE('/images/owasp.svg'), Description_skill='Learn about the OWASP organization and how they help with web application security.', id_road=10;
+INSERT INTO Skills SET Name_skill ='Cross-Site Scripting', Ico_skill=LOAD_FILE('/images/cross-site-scripting.svg'), Description_skill='Learn about cross-site scripting and how it is possible mitigate these kind of attacks.', id_road=10;
+INSERT INTO Skills SET Name_skill ='Clickjacking', Ico_skill=LOAD_FILE('/images/clickjacking.svg'), Description_skill='Learn about clickjacking and how it is possible to mitigate these kind of attacks.', id_road=10;
+INSERT INTO Skills SET Name_skill ='Content Security Policy', Ico_skill=LOAD_FILE('/images/content-security-policy.svg'), Description_skill='Learn about content security policy and how it can help to detect and mitigate certain types of attacks.', id_road=10;
+
+
+INSERT INTO Skills SET Name_skill ='Performance budgets', Ico_skill=LOAD_FILE('/images/performance-budgets.svg'), Description_skill='Learn about performance budgets and how you can create one for your web app.', id_road=11;
+INSERT INTO Skills SET Name_skill ='Lighthouse', Ico_skill=LOAD_FILE('/images/lighthouse.svg'), Description_skill='Learn about lighthouse and how it can be used to audit your web app.', id_road=11;
+INSERT INTO Skills SET Name_skill ='Chrome DevTools', Ico_skill=LOAD_FILE('/images/chrome-devtools.svg'), Description_skill='Learn about the Chrome DevTools and how it can be used to audit your web app.', id_road=11;
+
+
+INSERT INTO Skills SET Name_skill ='Package Managers', Ico_skill=LOAD_FILE('/images/package-managers.svg'), Description_skill='Learn about package managers and how they make managing dependencies easier.', id_road=12;
+INSERT INTO Skills SET Name_skill ='NPM', Ico_skill=LOAD_FILE('/images/npm.svg'), Description_skill='Learn about NPM and how it can be used to manage dependencies.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Yarn', Ico_skill=LOAD_FILE('/images/yarn.svg'), Description_skill='Learn about Yarn and how it can be used to manage dependencies.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Module Bundlers', Ico_skill=LOAD_FILE('/images/module-bundlers.svg'), Description_skill='Learn about module bundler and how they can help bundling your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Rollup', Ico_skill=LOAD_FILE('/images/rollup.svg'), Description_skill='Learn how you can use Rollup to bundle your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Webpack', Ico_skill=LOAD_FILE('/images/webpack.svg'), Description_skill='Learn how you can use Webpack to bundle your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Parcel', Ico_skill=LOAD_FILE('/images/parcel.svg'), Description_skill='Learn how you can use Parcel to bundle your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Snowpack', Ico_skill=LOAD_FILE('/images/snowpack.svg'), Description_skill='Learn how Snowpack can replace the traditional app bundler during development.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Linters and formatters', Ico_skill=LOAD_FILE('/images/linters-and-formatters.svg'), Description_skill='Learn how you can improve your code quality with linters and formatters.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Prettier', Ico_skill=LOAD_FILE('/images/prettier.svg'), Description_skill='Learn how you can use Prettier to format your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='ESLint', Ico_skill=LOAD_FILE('/images/eslint.svg'), Description_skill='Learn how you can use ESLint to lint your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Task Runners', Ico_skill=LOAD_FILE('/images/task-runners.svg'), Description_skill='Learn about task runners and how you can automate code execution.', id_road=12;
+INSERT INTO Skills SET Name_skill ='NPM Scripts', Ico_skill=LOAD_FILE('/images/npm-scripts.svg'), Description_skill='Learn about NPM scripts and how you can run your own.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Transpilers', Ico_skill=LOAD_FILE('/images/transpilers.svg'), Description_skill='Learn what transpilers are and why we need them.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Babel', Ico_skill=LOAD_FILE('/images/babel.svg'), Description_skill='Learn about Babel and how you can use it to transpile your code.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Typescript', Ico_skill=LOAD_FILE('/images/typescript.svg'), Description_skill='Learn how to use Typescript and how it can help making your code typesafe.', id_road=12;
+INSERT INTO Skills SET Name_skill ='CSS Pre-processors', Ico_skill=LOAD_FILE('/images/css-pre-processors.svg'), Description_skill='Learn about CSS pre-processors and why we need them.', id_road=12;
+INSERT INTO Skills SET Name_skill ='SASS', Ico_skill=LOAD_FILE('/images/sass.svg'), Description_skill='Learn about SASS and how you can use it to simplify your styles.', id_road=12;
+INSERT INTO Skills SET Name_skill ='PostCSS', Ico_skill=LOAD_FILE('/images/postcss.svg'), Description_skill='Learn about PostCSS and how you can use its ecosystem of plugins to extend your CSS build pipeline.', id_road=12;
+INSERT INTO Skills SET Name_skill ='Node.js', Ico_skill=LOAD_FILE('/images/nodejs.svg'), Description_skill='Learn how to use Node.js.', id_road=12;
+
+
+INSERT INTO Skills SET Name_skill ='lit-element', Ico_skill=LOAD_FILE('/images/lit-element.svg'), Description_skill='Learn how to use lit-element for creating fast, lightweight web components.', id_road=13;
+INSERT INTO Skills SET Name_skill ='Vue', Ico_skill=LOAD_FILE('/images/vue.svg'), Description_skill='Learn about Vue and how you can use it for building web apps.', id_road=13;
+INSERT INTO Skills SET Name_skill ='React', Ico_skill=LOAD_FILE('/images/react.svg'), Description_skill='Learn about React and how you can use it for building web apps.', id_road=13;
+INSERT INTO Skills SET Name_skill ='Angular', Ico_skill=LOAD_FILE('/images/angular.svg'), Description_skill='Learn about Angular and how you can use it for building web apps.', id_road=13;
+INSERT INTO Skills SET Name_skill ='Svelte', Ico_skill=LOAD_FILE('/images/svelte.svg'), Description_skill='Learn about Svelte and how it can convert your component into highly efficient imperative code.', id_road=13;
+INSERT INTO Skills SET Name_skill ='Stencil', Ico_skill=LOAD_FILE('/images/stencil.svg'), Description_skill='Learn how Stencil can be used for generating small, fast web components.', id_road=13;
+
+
+INSERT INTO Skills SET Name_skill ='testing-methodologies.svg', Ico_skill=LOAD_FILE('/images/testing-methodologies.svg'), Description_skill='Learn about various software testing methodologies and why it is important to test your code.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Unit Testing', Ico_skill=LOAD_FILE('/images/unit-testing.svg'), Description_skill='Learn about unit testing and how it can be used to test individual units of code.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Integration Testing', Ico_skill=LOAD_FILE('/images/integration-testing.svg'), Description_skill='Learn about integration testing and how it can be used to test modules as a group.', id_road=14;
+INSERT INTO Skills SET Name_skill ='System Testing', Ico_skill=LOAD_FILE('/images/system-testing.svg'), Description_skill='Learn about system testing and how it can be used to test the fully integrated software product.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Acceptance Testing', Ico_skill=LOAD_FILE('/images/acceptance-testing.svg'), Description_skill='Learn about acceptance testing and how it can be used to test the software for acceptability', id_road=14;
+INSERT INTO Skills SET Name_skill ='Smoke Testing', Ico_skill=LOAD_FILE('/images/smoke-testing.svg'), Description_skill='Learn about smoke testing and how it can be used to ensure that critical functionalities of the program are working fine.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Performance Testing', Ico_skill=LOAD_FILE('/images/performance-testing.svg'), Description_skill='Learn about performance testing and how it can be used to determine the responsiveness and stability of a program.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Usability Testing', Ico_skill=LOAD_FILE('/images/usability-testing.svg'), Description_skill='Learn about usability testing and how it can be used to determine if the system is easily usable for the end-user.', id_road=14;
+INSERT INTO Skills SET Name_skill ='White Box Testing', Ico_skill=LOAD_FILE('/images/white-box-testing.svg'), Description_skill='Learn about white box testing and how it can be used to test the software's internal structure, design, and coding.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Black Box Testing', Ico_skill=LOAD_FILE('/images/black-box-testing.svg'), Description_skill='Learn about black box testing and how a test can be carried out without looking at the internal code.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Automated Testing', Ico_skill=LOAD_FILE('/images/automated-testing.svg'), Description_skill='Learn about automated testing and when it should be applied.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Manual Testing', Ico_skill=LOAD_FILE('/images/manual-testing.svg'), Description_skill='Learn about manual testing and when it should be applied.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Continuous integration', Ico_skill=LOAD_FILE('/images/continuous-integration.svg'), Description_skill='Learn about continuous integration and it can enable iterative software development.', id_road=14;
+INSERT INTO Skills SET Name_skill ='A/B Testing', Ico_skill=LOAD_FILE('/images/a-b-testing.svg'), Description_skill='Learn about A/B testing and how it can be used to optimize your web app.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Test Runners', Ico_skill=LOAD_FILE('/images/test-runners.svg'), Description_skill='Learn about test runners and how they can help running tests.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Karma', Ico_skill=LOAD_FILE('/images/karma.svg'), Description_skill='Learn about the Karma test runner.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Mocha', Ico_skill=LOAD_FILE('/images/mocha.svg'), Description_skill='Learn about the Mocha testing framework.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Jasmine', Ico_skill=LOAD_FILE('/images/jasmine.svg'), Description_skill='Learn about the Jasmine testing frameworks.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Cypress', Ico_skill=LOAD_FILE('/images/cypress.svg'), Description_skill='Learn how to use Cypress for end-to-end-testing.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Ava', Ico_skill=LOAD_FILE('/images/ava.svg'), Description_skill='Learn about the Ava test runner.', id_road=14;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-Testing.svg'), Description_skill='Learn about the best practices when it comes to testing.', id_road=14;
+
+
+INSERT INTO Skills SET Name_skill ='Programming Paradigms', Ico_skill=LOAD_FILE('/images/programming-paradigms.svg'), Description_skill='Learn how programming languages can be categoried into different paraigmes based on their features.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Object Oriented Programming', Ico_skill=LOAD_FILE('/images/object-oriented-programming.svg'), Description_skill='Learn about object oriented programming and how objects can make your code easier to read and debug.', id_road=15;
+INSERT INTO Skills SET Name_skill ='S.O.L.I.D', Ico_skill=LOAD_FILE('/images/solid.svg'), Description_skill='Learn about the SOLID design pricinples that can make your code more understandable, flexible and maintainable.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Functional programming', Ico_skill=LOAD_FILE('/images/functional-programming.svg'), Description_skill='Learn about functional programming and how it can make your code easier to read and debug.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Recursion', Ico_skill=LOAD_FILE('/images/recursion.svg'), Description_skill='Learn about recursion and when it can be used to make your code more readable.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Higher-Order Functions', Ico_skill=LOAD_FILE('/images/higher-order-functions.svg'), Description_skill='Learn about higher-order functions and when it can be used to make your code more readable.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Currying', Ico_skill=LOAD_FILE('/images/currying.svg'), Description_skill='Learn about currying and when it can be used to make your code more readable.', id_road=15;
+INSERT INTO Skills SET Name_skill ='Monads', Ico_skill=LOAD_FILE('/images/monads.svg'), Description_skill='Learn about monads and when it can be used to make your code more readable.', id_road=15;
+
+
+INSERT INTO Skills SET Name_skill ='Design Patterns', Ico_skill=LOAD_FILE('/images/design-patterns.svg'), Description_skill='Learn how commonly occurring problems can be solved using design patterns.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Singleton', Ico_skill=LOAD_FILE('/images/singleton.svg'), Description_skill='Learn about the singleton design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Observer', Ico_skill=LOAD_FILE('/images/observer.svg'), Description_skill='Learn about the observer design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Prototype', Ico_skill=LOAD_FILE('/images/prototype-architecture-paradigms.svg'), Description_skill='Learn about the prototype design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Bridge', Ico_skill=LOAD_FILE('/images/bridge.svg'), Description_skill='Learn about the bridge design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Proxy', Ico_skill=LOAD_FILE('/images/proxy.svg'), Description_skill='Learn about the proxy design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Chain of responsibility', Ico_skill=LOAD_FILE('/images/chain-of-responsibility.svg'), Description_skill='Learn about the chain of responsibility design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='Constructor', Ico_skill=LOAD_FILE('/images/constructor.svg'), Description_skill='Learn about the constructor design pattern and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='CSS Methodologies', Ico_skill=LOAD_FILE('/images/css-methodologies.svg'), Description_skill='Learn how CSS can be structured using CSS methodologies.', id_road=16;
+INSERT INTO Skills SET Name_skill ='BEM', Ico_skill=LOAD_FILE('/images/bem.svg'), Description_skill='Learn about the BEM methodology and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='SMACSS', Ico_skill=LOAD_FILE('/images/smacss.svg'), Description_skill='Learn about the SMACSS methodology and when it should be used.', id_road=16;
+INSERT INTO Skills SET Name_skill ='OOCSS', Ico_skill=LOAD_FILE('/images/oocss.svg'), Description_skill='Learn about the OOCSS methodology and when it should be used.', id_road=16;
+
+
+INSERT INTO Skills SET Name_skill ='Git', Ico_skill=LOAD_FILE('/images/git.svg'), Description_skill='Learn about git and how it is used for version control.', id_road=17;
+INSERT INTO Skills SET Name_skill ='Github', Ico_skill=LOAD_FILE('/images/github.svg'), Description_skill='Learn how to use Github.', id_road=17;
+INSERT INTO Skills SET Name_skill ='Bitbucket', Ico_skill=LOAD_FILE('/images/bitbucket.svg'), Description_skill='Learn how to use Bitbucket.', id_road=17;
+
+INSERT INTO Skills SET Name_skill ='Agile Development', Ico_skill=LOAD_FILE('/images/agile-development.svg'), Description_skill='Learn about agile development and when to use it.', id_road=18;
+INSERT INTO Skills SET Name_skill ='Scrum', Ico_skill=LOAD_FILE('/images/scrum.svg'), Description_skill='Learn about scrum and when to use it.', id_road=18;
+INSERT INTO Skills SET Name_skill ='Kanban', Ico_skill=LOAD_FILE('/images/kanban.svg'), Description_skill='Learn about kanban and when to use it.', id_road=18;
+INSERT INTO Skills SET Name_skill ='Waterfall Development', Ico_skill=LOAD_FILE('/images/waterfall-development.svg'), Description_skill='Learn about waterfall development and when to use it.', id_road=18;
+INSERT INTO Skills SET Name_skill ='Test Driven Development', Ico_skill=LOAD_FILE('/images/test-driven-development.svg'), Description_skill='Learn about test driven development and when to use it.', id_road=18;
+
+
+INSERT INTO Skills SET Name_skill ='Color Theory', Ico_skill=LOAD_FILE('/images/color-theory.svg'), Description_skill='Learn about color theory and how you can make your own color schemes.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Color Wheel', Ico_skill=LOAD_FILE('/images/color-wheel.svg'), Description_skill='Learn how to use the color wheel when making a color scheme.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Typography', Ico_skill=LOAD_FILE('/images/typography.svg'), Description_skill='Learn about typography and how to describe fonts.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Font Size', Ico_skill=LOAD_FILE('/images/font-size.svg'), Description_skill='Learn about font sizes and how to choose the right one.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Line Spacing', Ico_skill=LOAD_FILE('/images/line-spacing.svg'), Description_skill='Learn about line spacing and how to choose the right one.', id_road=19;
+INSERT INTO Skills SET Name_skill ='C.R.A.P', Ico_skill=LOAD_FILE('/images/crap.svg'), Description_skill='Learn how the C.R.A.P. design principles can help you point out the qualities (or flaws) in a design.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Contrast', Ico_skill=LOAD_FILE('/images/contrast.svg'), Description_skill='Learn how the principles of contrast can help you when designing.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Repetition', Ico_skill=LOAD_FILE('/images/repetition.svg'), Description_skill='Learn how the principles of repetition can help you when designing.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Alignment', Ico_skill=LOAD_FILE('/images/alignment.svg'), Description_skill='Learn how the principles of alignment can help you when designing.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Proximity', Ico_skill=LOAD_FILE('/images/proximity.svg'), Description_skill='Learn how the principles of proximity can help you when designing.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Consistency', Ico_skill=LOAD_FILE('/images/consistency.svg'), Description_skill='Learn why consistency is one of the most important building-blocks in a design.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Spacing', Ico_skill=LOAD_FILE('/images/spacing.svg'), Description_skill='Learn how to use space in your design.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Error Handling', Ico_skill=LOAD_FILE('/images/error-handling.svg'), Description_skill='Learn how to improve the user experience by handling errors in an intuitive way.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Loading', Ico_skill=LOAD_FILE('/images/loading.svg'), Description_skill='Learn how a loading state can improve the user experience.', id_road=19;
+INSERT INTO Skills SET Name_skill ='The Golden Ratio', Ico_skill=LOAD_FILE('/images/the-golden-ratio.svg'), Description_skill='Learn how the golden ratio can help you when choose measurements for your design.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Mobile First', Ico_skill=LOAD_FILE('/images/mobile-first.svg'), Description_skill='Learn about designing for mobile first and why it is important.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Hit Targets', Ico_skill=LOAD_FILE('/images/hit-targets.svg'), Description_skill='Learn about hit targets can why they should not be neglected.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Design Systems', Ico_skill=LOAD_FILE('/images/design-systems.svg'), Description_skill='Learn what design systems are and get familiar with some.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Material Design', Ico_skill=LOAD_FILE('/images/material-design.svg'), Description_skill='Learn about material design and get familiar with the core principles.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Fluent Design', Ico_skill=LOAD_FILE('/images/fluent-design.svg'), Description_skill='Learn about fluent design and get familiar with the core principles.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Accessibility', Ico_skill=LOAD_FILE('/images/accessibility.svg'), Description_skill='Learn how and why it is important to design for accessibility.', id_road=19;
+INSERT INTO Skills SET Name_skill ='Best Practices', Ico_skill=LOAD_FILE('/images/best-practices-design.svg'), Description_skill='Learn about some of the best practices when designing.', id_road=19;
+
+
+
+
+INSERT INTO Users SET Name_User ='Alex', Surname_User='Alexov', NickName_User='Alex111', Login_User='alex@mail.ru', Password_User='123qwe', id_role=1;
+INSERT INTO Users SET Name_User ='Boris', Surname_User='Borisov', NickName_User='Boris222', Login_User='borya221@mail.ru', Password_User='123asd', id_role=2;
+INSERT INTO Users SET Name_User ='Chief', Surname_User='Chiefov' NickName_User='Chief333', Login_User='chifi123@mail.ru', Password_User='123zxc', id_role=3;
+
+
+
+
+
+DROP DATABASE `NoikerSkills`;
