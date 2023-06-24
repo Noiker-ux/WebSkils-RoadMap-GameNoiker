@@ -1,0 +1,22 @@
+body.dark-mode {
+    color: #000000;
+    background-color: #292a36;
+  }
+body.dark-mode a {
+  color: #809fff;
+}
+body.dark-mode>* {
+  color: rgb(252, 252, 252);
+}
+body.dark-mode .header__avatar-nickname{
+    color: rgb(252, 252, 252);
+}
+body.dark-mode .collection{
+  background-color: #30313f;
+}
+body.dark-mode .skill__img {
+  filter: opacity(0.8);
+}
+body.dark-mode .fancybox-content{
+ background-color: #292a36d5;
+}
