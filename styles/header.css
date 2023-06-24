@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* Основные параметры */
 .header__inner{
@@ -102,4 +103,110 @@
     transition: transform .1s linear;
     border-color: #7a7a7aa6; 
   }
+=======
+
+/* Основные параметры */
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Левая часть шапки */
+  .header__avatar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .header__avatar-img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .header__avatar-nickname{
+    font-family: 'Rubic';
+    color: #535353;
+    font-size: 20px;
+  }
+  /* Правая часть шапки */
+  .header__options{
+    display: flex;
+    gap: 10px;
+  }
+  .header__option-theme{
+    margin: auto;
+  }
+  .header__option-btn{
+    border-radius: 50%;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: .3s all ease;
+  }
+  .header__option-btn:hover{
+    filter: opacity(0.5);
+  }
+  .header__option-img{
+    width: 20px;
+    height: 20px
+  }
+  .donate__btn{
+    background-color: #4898ff;
+    display: block;
+  }
+  .donate__btn-img{
+    filter: invert(1);
+    margin: 7px;
+  }
+  /* Стилизация чекбокса темы */
+  .theme-toggler__checkbox {
+    opacity: 0;
+    position: absolute;
+    right: 30px;
+    top: 25%;
+    z-index: 1; 
+  }
+  .theme-toggler__switch {
+    width: 55px;
+    height: 25px;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    background: #ececec;
+    border: 1px solid #afafaf;
+    transition: all .1s linear;
+    display: inline-block;
+    vertical-align: middle; 
+  }
+  .theme-toggler__switch::after {
+    content: "";
+    position: absolute;
+    width:  21px;
+    height: 21px;
+    margin-top: 1px;
+    margin-left: 1px;
+    border-radius: 1em;
+    background: #fff;
+    border: 1px solid #757575;
+    box-shadow: 2px 5px 10px -2px rgba(0, 0, 0, 0.2);
+    transition: all .1s linear; 
+  }
+  
+  .theme-toggler__checkbox:checked + .theme-toggler__switch {
+    background: #30313f;
+    border-color: #7a7a7aa6; }
+  
+  .theme-toggler__checkbox:checked + .theme-toggler__switch::after {
+    transform: translatex(31px);
+    transition: transform .1s linear;
+    border-color: #7a7a7aa6; 
+  }
+  .theme-toggler__checkbox:checked + .theme-toggler__switch::after {
+    transform: translatex(31px);
+    transition: transform .1s linear;
+    border-color: #7a7a7aa6; 
+  }
+>>>>>>> 3697842de08f58a6bcdfae2dd370d14380d78d59
   

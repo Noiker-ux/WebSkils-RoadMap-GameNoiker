@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('./darkMode.css');
 @import url('./header.css');
 
@@ -95,4 +96,103 @@ body{
 }
 
 
+=======
+@import url('./darkMode.css');
+@import url('./header.css');
+
+@font-face {
+  font-family: 'Rubic';
+  src: url('../fonts/Rubik.ttf'); 
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubic';
+}
+body{
+  background-color: #d6d6d6;
+  color: black;
+}
+
+.container{
+ padding: 15px;
+}
+.collection{
+  background-color: #E8E8EA;
+  border-radius: 10px;
+  padding: 25px 5px 25px 20px;
+}
+.collection+.collection{
+  margin-top: 20px;
+}
+
+.collection__title{
+  text-transform: uppercase;
+  font-family: 'Rubick', sans-serif;
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+.area{
+  margin-top: 20px;
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  border-top: 1px dotted black;
+  padding-top: 20px;
+  gap: 20px;
+  margin-top: 20px;
+}
+.skill{
+  display: flex;
+  width: 70px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.skill__img{
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.skill__img:hover{
+  transform: scale(1.05);
+}
+
+.skill__subtitle{
+  margin-top: 5px;
+  max-width: 70px;
+  text-align: center;
+  word-wrap:break-word;
+  font-size: 11px;
+}
+
+
+.faq{
+  max-width: 500px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 15px;
+  padding: 35px 15px;
+}
+.faq__subtitle{
+  display: block;
+  margin-top: 10px;
+}
+.faq__answer{
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+.faq__qestion{
+  margin-top: 20px;
+}
+
+
+>>>>>>> 3697842de08f58a6bcdfae2dd370d14380d78d59
 /* 
