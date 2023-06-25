@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./styles/main.css">
     <title>Noiker Road Map</title>
+
 </head>
 <body data-theme="normal">
     <header class="header">
@@ -48,8 +50,14 @@
     <main class="main">
         <div class="container">
             <div class="main_inner">
-            
-                <?php 
+
+<?php
+function get_favicon($url){
+    $url = str_replace("http://","",$url);
+    return "http://www.google.com/s2/favicons?domain=".$url;
+}
+
+      
         $adress='localhost';
         $nameUser='root';
         $password='';
@@ -81,12 +89,35 @@
                                     $Skills = 'SELECT * FROM Skills JOIN RoadEducation ON Skills.id_road=RoadEducation.id_road WHERE RoadEducation.id_road='.$Road[0];
                                     $SkillsQuery = mysqli_query($connection, $Skills);
                                     while ($Skill = mysqli_fetch_array($SkillsQuery)) {
-                                        echo "<div class='skill'>
-                                                <img class='skill__img' src='".$Skill['Ico_skill']."' alt='".$Skill['Name_skill']."'>
+                                        echo "<div class='skill tooltip-wrap'>
+                                                <img id='demo-tooltip-mouse' class='hover skill__img tooltip' src='".$Skill['Ico_skill']."' alt='".$Skill['Name_skill']."'>
+                                                <div class='tooltip-content'>
+                                                    <div class='tooltip-header'>
+                                                        <h4 class='tooltip-title'>".$Skill['Name_skill']."</h4>
+                                                        <div class='tooltip-header-links'>
+                                                            <a class='tooltip-href' href='https://www.google.ru/search?q=".$Road['Name_road']." ".$Skill['Name_skill']."'>
+                                                                <img class='tooltip-img' src='".get_favicon('https://www.google.ru/')."'>
+                                                            </a>
+                                                            <a class='tooltip-href tooltip-href-youtube' href='https://www.youtube.com/results?search_query=".$Road['Name_road']." ".$Skill['Name_skill']."'>
+                                                                <img class='tooltip-img' src='".get_favicon('https://www.youtube.com/')."'>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class='tooltip-description'>".$Skill['Description_skill']."</p>
+                                                    <div class='helpfull-links'>";
+                                                    $HelpfullLinks = 'SELECT * FROM Helpful_links JOIN Skills ON Helpful_links.id_skill =Skills.id_skill  WHERE Helpful_links.id_skill ='.$Skill[0];
+                                                    $HelpfullLinksQuery = mysqli_query($connection, $HelpfullLinks);
+                                                    while ($HelpfullLink = mysqli_fetch_array($HelpfullLinksQuery)){
+                                                        echo "<p class='helpfull-link'>
+                                                                <img src='".get_favicon($HelpfullLink['Href_link'])."'>
+                                                                <a href='".$HelpfullLink['Href_link']."'>".$HelpfullLink['Title_link']."</a>
+                                                            </p>";
+                                                    }
+                                              echo "</div>
+                                                </div> 
                                                 <p class='skill__subtitle'>".$Skill['Name_skill']."</p>
                                             </div>"; 
                                     }
-
                             echo    "</div>
                                 </div>";
                         }
@@ -99,7 +130,7 @@
             </div>
         </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="./scripts/app.js"></script>

@@ -48,7 +48,8 @@ FOREIGN KEY (id_road)  REFERENCES RoadEducation(id_road)
 
 CREATE TABLE `Helpful_links`(
 id_link int NOT NULL AUTO_INCREMENT,
-link text NOT NULL,
+Title_link text NOT NULL,
+Href_link text NOT NULL,
 id_skill int NOT NULL,
 PRIMARY KEY (id_link),
 FOREIGN KEY (id_skill)  REFERENCES Skills(id_skill)
@@ -507,6 +508,9 @@ INSERT INTO Skills SET Name_skill ='Docker', Ico_skill='/images/docker.svg', Des
 INSERT INTO Skills SET Name_skill ='SSH', Ico_skill='/images/ssh.svg', Description_skill="Learn how to use SSH and learn how to connect to a device using an SSH client.", id_road=25;
 
 
+INSERT INTO Helpful_links SET Title_link='MDN - HTML Basics', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics', id_skill=1;
+INSERT INTO Helpful_links SET Title_link='MDN - Introduction to HTML', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML', id_skill=1;
+INSERT INTO Helpful_links SET Title_link='Codecademy - Learn HTML', Href_link='https://www.codecademy.com/learn/learn-html', id_skill=1;
 
 
 INSERT INTO Users SET Name_User ='Alex', Surname_User='Alexov', NickName_User='Alex111', Login_User='alex@mail.ru', Password_User='123qwe', id_role=1;

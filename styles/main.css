@@ -93,3 +93,66 @@ body{
 .faq__qestion{
   margin-top: 20px;
 }
+
+
+.tooltip-wrap {
+  position: relative;
+}
+.tooltip-wrap::after{
+  display: none;
+  content: '';
+  position: absolute;
+  left: 25px;
+  top: calc(50% - 20px);
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  top: calc(50% - 0.6rem);
+  left: 5%;
+  right: 5%;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  min-width: 20rem;
+  z-index: 5;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
+}
+.tooltip-wrap:hover::after{
+  display: block;
+  z-index: 8;
+}
+.tooltip-description{
+  margin-top: 5px;
+}
+.helpfull-links{
+  margin-top: 10px;
+}
+.helpfull-link+.helpfull-link{
+  margin-top: 5px;
+}
+.tooltip-img{
+  width: 18px;
+  height: 18px;
+}
+.tooltip-header{
+  display: flex;
+  justify-content: space-between;
+}
+.tooltip-href-youtube {
+  filter: drop-shadow(0px 0px 1px black);
+}
+.tooltip-href{
+  text-decoration: none;
+}
