@@ -118,21 +118,34 @@ body{
   top: calc(50% - 0.6rem);
   left: 5%;
   right: 5%;
-  background-color: #fff;
+  width: 500px;
+  background-color: #352e42 !important;
   border: 1px solid black;
   border-radius: 10px;
   padding: 15px;
   min-width: 20rem;
   z-index: 5;
 }
+.tippy-box{
+  width: 350px;
+  background-color: #282536;
+  color: rgb(252, 252, 252);
+  padding: 5px;
+  border-radius: 10px;
+}
+.tippy-box[data-placement^=top]>.tippy-arrow:before, .tippy-box[data-placement^=bottom]>.tippy-arrow{
+  color: #282536;
+}
 
-.tooltip-wrap:hover .tooltip-content {
-  display: block;
+.helpfull-link{
+  display: flex;
+  align-items: center;
 }
-.tooltip-wrap:hover::after{
-  display: block;
-  z-index: 8;
+.helpfull-link>*{
+  color: rgb(197, 185, 248);
+  margin-left: 5px;
 }
+
 .tooltip-description{
   margin-top: 5px;
 }

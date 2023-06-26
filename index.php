@@ -61,7 +61,7 @@ function get_favicon($url){
         $adress='localhost';
         $nameUser='root';
         $password='';
-        $NameBD='NoikerSkills';
+        $NameBD='cz12893_noiker';
         // коннект с БД
         $connection = mysqli_connect($adress, $nameUser, $password, $NameBD);
         // Проверка на подключение
@@ -70,7 +70,7 @@ function get_favicon($url){
         }
         else {
             mysqli_set_charset($connection, "utf8");
-            $Sections = 'SELECT * FROM NoikerSkills.Areas;';
+            $Sections = 'SELECT * FROM cz12893_noiker.Areas;';
             $SectionQuery = mysqli_query($connection, $Sections);
             $NumberSection = 1;
             while ($Section = mysqli_fetch_array($SectionQuery)) {
@@ -128,6 +128,10 @@ function get_favicon($url){
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> 
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="./scripts/app.js"></script>

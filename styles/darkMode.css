@@ -29,5 +29,6 @@ body.dark-mode .tooltip-wrap::after{
 body.dark-mode .tooltip-wrap .tooltip-content{
     background-color: #292a36;
   }
-
-  
+body.dark-mode .tippy-box {
+        background-color: #282536;
+}
