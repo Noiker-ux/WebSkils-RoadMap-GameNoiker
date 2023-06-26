@@ -512,6 +512,444 @@ INSERT INTO Helpful_links SET Title_link='MDN - HTML Basics', Href_link='https:/
 INSERT INTO Helpful_links SET Title_link='MDN - Introduction to HTML', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML', id_skill=1;
 INSERT INTO Helpful_links SET Title_link='Codecademy - Learn HTML', Href_link='https://www.codecademy.com/learn/learn-html', id_skill=1;
 
+INSERT INTO Helpful_links SET Title_link='MDN - HTML elements reference', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTML/Element', id_skill=2;
+INSERT INTO Helpful_links SET Title_link='Tutorialspoint - Basic HTML tags', Href_link='https://www.tutorialspoint.com/html/html_basic_tags.htm', id_skill=2;
+INSERT INTO Helpful_links SET Title_link='Elated - First 10 HTML tags', Href_link='https://www.elated.com/first-10-html-tags/', id_skill=2;
+INSERT INTO Helpful_links SET Title_link='W3Schools - HTML tags', Href_link='https://www.w3schools.com/tags/ref_byfunc.asp', id_skill=2;
+
+INSERT INTO Helpful_links SET Title_link='MDN - HTML forms', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Forms', id_skill=3;
+INSERT INTO Helpful_links SET Title_link='Google Web - Forms', Href_link='https://web.dev/learn/forms/', id_skill=3;
+INSERT INTO Helpful_links SET Title_link='W3Schools - Forms', Href_link='https://www.w3schools.com/html/html_forms.asp', id_skill=3;
+
+INSERT INTO Helpful_links SET Title_link='web.dev - Discoverable', Href_link='https://web.dev/discoverable/', id_skill=4;
+INSERT INTO Helpful_links SET Title_link='Google Search - Get Started', Href_link='https://developers.google.com/search/docs/fundamentals/get-started-developers?hl=ru', id_skill=4;
+INSERT INTO Helpful_links SET Title_link='Google Search - SEO basics', Href_link='https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics?hl=ru', id_skill=4;
+INSERT INTO Helpful_links SET Title_link='web.dev - SEO audits', Href_link='https://developer.chrome.com/docs/lighthouse/seo/', id_skill=4;
+
+INSERT INTO Helpful_links SET Title_link='Google Web - Social Discovery', Href_link='https://web.dev/social-discovery/', id_skill=5;
+INSERT INTO Helpful_links SET Title_link='Google Search - Search Features', Href_link='https://developers.google.com/search/docs/appearance/visual-elements-gallery?hl=ru', id_skill=5;
+INSERT INTO Helpful_links SET Title_link='Google Search - Structured Data', Href_link='https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data?hl=ru', id_skill=5;
+INSERT INTO Helpful_links SET Title_link='web.dev - Easily discoverable', Href_link='https://web.dev/discoverable/', id_skill=5;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Adding vector graphics to the Web', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web', id_skill=6;
+INSERT INTO Helpful_links SET Title_link='SVG on the web', Href_link='https://svgontheweb.com/', id_skill=6;
+
+INSERT INTO Helpful_links SET Title_link='MDN - HTML guidelines', Href_link='https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/HTML', id_skill=7;
+INSERT INTO Helpful_links SET Title_link='W3Schools - HTML Coding Conventions', Href_link='https://www.w3schools.com/html/html5_syntax.asp', id_skill=7;
+
+INSERT INTO Helpful_links SET Title_link='MDN - CSS Basics', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Tutorial', Href_link='https://www.w3schools.com/css/default.asp', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='Supercharged - CSS Selectors', Href_link='https://www.youtube.com/watch?v=IKho_xDKaLw', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS first steps', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS building blocks', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS values and units', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units', id_skill=8;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS Syntax', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax', id_skill=8;
+
+INSERT INTO Helpful_links SET Title_link='MDN - CSS selectors', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors', id_skill=9;
+INSERT INTO Helpful_links SET Title_link='MDN - All selectors', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors', id_skill=9;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Child and Sibling Selectors', Href_link='https://css-tricks.com/child-and-sibling-selectors/', id_skill=9;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - All Selectors', Href_link='https://css-tricks.com/almanac/selectors/', id_skill=9;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Combinators', Href_link='https://www.w3schools.com/css/css_combinators.asp', id_skill=9;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Specificity', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity', id_skill=10;
+INSERT INTO Helpful_links SET Title_link='MDN - Cascade and inheritance', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance', id_skill=10;
+INSERT INTO Helpful_links SET Title_link='Dev.to - CSS Specificity', Href_link='https://dev.to/emmawedekind/css-specificity-1kca', id_skill=10;
+INSERT INTO Helpful_links SET Title_link='Specificity Calculator', Href_link='https://specificity.keegan.st/', id_skill=10;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Specificity', Href_link='https://www.w3schools.com/css/css_specificity.asp', id_skill=10;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Pseudo-classes', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes', id_skill=11;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Meet the Pseudo Class Selectors', Href_link='https://css-tricks.com/pseudo-class-selectors/', id_skill=11;
+INSERT INTO Helpful_links SET Title_link='When do the :hover, :focus, and :active pseudo-classes apply?', Href_link='https://bitsofco.de/when-do-the-hover-focus-and-active-pseudo-classes-apply/', id_skill=11;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Pseudo-elements', Href_link='https://www.w3schools.com/css/css_pseudo_elements.asp', id_skill=11;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Pseudo-classes', Href_link='https://www.w3schools.com/css/css_pseudo_classes.asp', id_skill=11;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Introduction to the CSS basic box model', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model', id_skill=12;
+INSERT INTO Helpful_links SET Title_link='MDN - The box model', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model', id_skill=12;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Inheriting box-sizing', Href_link='https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/', id_skill=12;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Mastering margin collapsing', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing', id_skill=13;
+INSERT INTO Helpful_links SET Title_link='Margin Collapse in CSS: What, Why, and How', Href_link='https://medium.com/@joseph0crick/margin-collapse-in-css-what-why-and-how-328c10e37ca0', id_skill=13;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - What You Should Know About Collapsing Margins', Href_link='https://css-tricks.com/what-you-should-know-about-collapsing-margins/', id_skill=13;
+INSERT INTO Helpful_links SET Title_link='What's the Deal with Collapsible Margins?', Href_link='https://bitsofco.de/collapsible-margins/', id_skill=13;
+INSERT INTO Helpful_links SET Title_link='What’s the Deal with Margin Collapse?', Href_link='https://www.jonathan-harrell.com/blog/what%E2%80%99s-the-deal-with-margin-collapse/', id_skill=13;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Color', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/color', id_skill=14;
+INSERT INTO Helpful_links SET Title_link='MDN - Tag color', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/color_value', id_skill=14;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Colors', Href_link='https://www.w3schools.com/css/css_colors.asp', id_skill=14;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Calc', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/calc', id_skill=15;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - A Couple of Use Cases for Calc()', Href_link='https://css-tricks.com/a-couple-of-use-cases-for-calc/', id_skill=15;
+
+INSERT INTO Helpful_links SET Title_link='Chrome Dev - Basic Layout', Href_link='https://developers.google.com/training/certification/mobile-web-specialist/study-guide/basic-layout', id_skill=16;
+INSERT INTO Helpful_links SET Title_link='W3Schools - CSS Website Layout', Href_link='https://www.w3schools.com/css/css_website_layout.asp', id_skill=16;
+INSERT INTO Helpful_links SET Title_link='MDN - Document and website structure', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure', id_skill=16;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS layout', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout', id_skill=16;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Flexbox', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox', id_skill=17;
+INSERT INTO Helpful_links SET Title_link='A Complete Guide to Flexbox', Href_link='https://css-tricks.com/snippets/css/a-guide-to-flexbox/', id_skill=17;
+INSERT INTO Helpful_links SET Title_link='Flexbox Froggy', Href_link='https://flexboxfroggy.com/#ru', id_skill=17;
+INSERT INTO Helpful_links SET Title_link='Flexbox Defense', Href_link='http://flexboxdefense.com/', id_skill=17;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Grids', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids', id_skill=18;
+INSERT INTO Helpful_links SET Title_link='A Complete Guide to CSS Grid', Href_link='https://css-tricks.com/snippets/css/complete-guide-grid/', id_skill=18;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS Grid', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout', id_skill=18;
+INSERT INTO Helpful_links SET Title_link='CSS Grid Garden', Href_link='https://cssgridgarden.com/#ru', id_skill=18;
+INSERT INTO Helpful_links SET Title_link='Supercharged - CSS Grids', Href_link='https://www.youtube.com/watch?v=AqwPrR7hklE', id_skill=18;
+
+INSERT INTO Helpful_links SET Title_link='MDN - transform', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/transform', id_skill=19;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Transform', Href_link='https://css-tricks.com/almanac/properties/t/transform/', id_skill=19;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Using CSS animations', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations', id_skill=20;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Animation', Href_link='https://css-tricks.com/almanac/properties/a/animation/', id_skill=20;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Responsive design', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design', id_skill=21;
+INSERT INTO Helpful_links SET Title_link='Responsive Web Design Fundamentals by Google', Href_link='https://www.udacity.com/course/responsive-web-design-fundamentals--ud893', id_skill=21;
+INSERT INTO Helpful_links SET Title_link='Google Dev - Responsive Design', Href_link='https://developers.google.com/web/fundamentals/design-and-ux/responsive', id_skill=21;
+INSERT INTO Helpful_links SET Title_link='Google Dev - UX Patterns', Href_link='https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns', id_skill=21;
+INSERT INTO Helpful_links SET Title_link='Google Dev - Responsive Content', Href_link='https://developers.google.com/web/fundamentals/design-and-ux/responsive/content', id_skill=21;
+INSERT INTO Helpful_links SET Title_link='Codelabs - Responsive Design', Href_link='https://developers.google.com/codelabs/pwa-training/pwa03--going-offline?index=../..dev-pwa-training&hl=ru#0', id_skill=21;
+
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - CSS Media Queries & Using Available Space', Href_link='https://css-tricks.com/css-media-queries/', id_skill=22;
+INSERT INTO Helpful_links SET Title_link='MDN - Using media queries', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries', id_skill=22;
+INSERT INTO Helpful_links SET Title_link='MDN - Using Media Queries for Accessibility', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries_for_accessibility', id_skill=22;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Sizing items in CSS', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS', id_skill=23;
+INSERT INTO Helpful_links SET Title_link='MDN - CSS values and units', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units', id_skill=23;
+INSERT INTO Helpful_links SET Title_link='The CSS Workshop - Relative Units', Href_link='https://thecssworkshop.com/lessons/relative-units', id_skill=23;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Fun with Viewport Units', Href_link='https://css-tricks.com/fun-viewport-units/', id_skill=23;
+INSERT INTO Helpful_links SET Title_link='Dev.to - 15 CSS Relative units', Href_link='https://dev.to/bytegasm/15-css-relative-units-how-many-do-you-know-em-rem-ex-cap-ch-ic-6m', id_skill=23;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Responsive Images', Href_link='https://developers.google.com/web/fundamentals/design-and-ux/responsive/images', id_skill=24;
+INSERT INTO Helpful_links SET Title_link='MDN - Responsive Images', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images', id_skill=24;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Using CSS custom properties', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties', id_skill=25;
+INSERT INTO Helpful_links SET Title_link='Google Devs - CSS Variables: Why Should You Care?', Href_link='https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care', id_skill=25;
+INSERT INTO Helpful_links SET Title_link='Dev.to - CSS Quickies: CSS Variables', Href_link='https://dev.to/lampewebdev/css-quickies-css-variables-or-how-you-create-a-white-dark-theme-easily-1i0i', id_skill=25;
+INSERT INTO Helpful_links SET Title_link='CSS Variables explained with 5 examples', Href_link='https://codeburst.io/css-variables-explained-with-5-examples-84adaffaa5bd', id_skill=25;
+
+INSERT INTO Helpful_links SET Title_link='MDN - CSS guidelines', Href_link='https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/CSS', id_skill=26;
+INSERT INTO Helpful_links SET Title_link='MDN - Organizing your CSS', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing', id_skill=26;
+INSERT INTO Helpful_links SET Title_link='Speckyboy - Good and bad CSS practices', Href_link='https://speckyboy.com/good-bad-css-practices/', id_skill=26;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Javascript First Steps', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps', id_skill=27;
+INSERT INTO Helpful_links SET Title_link='MDN - Javascript Basics', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics', id_skill=27;
+INSERT INTO Helpful_links SET Title_link='MDN - Javascript Building Blocks', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks', id_skill=27;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Spread syntax', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax', id_skill=28;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - An introduction to Spread syntax', Href_link='https://www.freecodecamp.org/news/an-introduction-to-spread-syntax-in-javascript-fba39595922c/', id_skill=28;
+INSERT INTO Helpful_links SET Title_link='Object rest and spread properties', Href_link='https://v8.dev/features/object-rest-spread', id_skill=28;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Destructuring assignment', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment', id_skill=29;
+INSERT INTO Helpful_links SET Title_link='MDN - ES6 In Depth: Destructuring', Href_link='https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/', id_skill=29;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Destructuring assignment', Href_link='https://javascript.info/destructuring-assignment', id_skill=29;
+
+INSERT INTO Helpful_links SET Title_link='MDN - DOM Introduction', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction', id_skill=30;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - What's the DOM', Href_link='https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/', id_skill=30;
+INSERT INTO Helpful_links SET Title_link='Introduction to the DOM', Href_link='https://learn.co/lessons/introduction-to-the-dom', id_skill=30;
+INSERT INTO Helpful_links SET Title_link='Htmldom.dev', Href_link='https://htmldom.dev/', id_skill=30;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Locating DOM elements using selectors', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors', id_skill=31;
+INSERT INTO Helpful_links SET Title_link='Supercharged - querySelector', Href_link='https://www.youtube.com/watch?v=s0vg_H9hBuU', id_skill=31;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Introduction to events', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='MDN - Creating and triggering events', Href_link='https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='Event Bubbling and Event Capturing in JavaScript', Href_link='https://medium.com/@vsvaibhav2016/event-bubbling-and-event-capturing-in-javascript-6ff38bec30e', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - A simplified explanation of event propagation', Href_link='https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='JavaScript Events Explained', Href_link='https://flaviocopes.com/javascript-events/', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='MDN - addEventListener()', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='MDN - removeEventListener()', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener', id_skill=32;
+INSERT INTO Helpful_links SET Title_link='Event order', Href_link='https://www.quirksmode.org/js/events_order.html', id_skill=32;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Introducing JavaScript objects', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='MDN - Working with objects', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Objects', Href_link='https://javascript.info/object', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='MDN - this', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='W3Schools - The JavaScript this Keyword', Href_link='https://www.w3schools.com/js/js_this.asp', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='MDN - bind()', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='MDN - new operator', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='MDN - new.target', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new.target', id_skill=33;
+INSERT INTO Helpful_links SET Title_link='Data Structures: Objects and Arrays', Href_link='https://scotch.io/courses/10-need-to-know-javascript-concepts/data-structures-objects-and-arrays', id_skill=33;
+
+INSERT INTO Helpful_links SET Title_link='The prototype chain', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain', id_skill=34;
+INSERT INTO Helpful_links SET Title_link='Prototypes in JavaScript', Href_link='https://medium.com/better-programming/prototypes-in-javascript-5bba2990e04b', id_skill=34;
+INSERT INTO Helpful_links SET Title_link='Dev.to - JavaScript Visualized: Prototypal Inheritance', Href_link='https://dev.to/lydiahallie/javascript-visualized-prototypal-inheritance-47co', id_skill=34;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Classes', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes', id_skill=35;
+INSERT INTO Helpful_links SET Title_link='Medium - ES6 Classes', Href_link='https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a', id_skill=35;
+INSERT INTO Helpful_links SET Title_link='MDN - Inheritance', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance', id_skill=35;
+INSERT INTO Helpful_links SET Title_link='MDN - Object Oriented Programming', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS', id_skill=35;
+INSERT INTO Helpful_links SET Title_link='MDN - super', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super', id_skill=35;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Regular Expressions', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions', id_skill=36;
+INSERT INTO Helpful_links SET Title_link='javascript.info - Regular expressions', Href_link='https://javascript.info/regular-expressions', id_skill=36;
+INSERT INTO Helpful_links SET Title_link='MDN - RegExp', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp', id_skill=36;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Template literals', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals', id_skill=37;
+INSERT INTO Helpful_links SET Title_link='MDN - ES6 In Depth: Template strings', Href_link='https://hacks.mozilla.org/2015/05/es6-in-depth-template-strings-2/', id_skill=37;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Getting Literal With ES6 Template Strings', Href_link='https://developers.google.com/web/updates/2015/01/ES6-Template-Strings', id_skill=37;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - JavaScript Promises: an Introduction', Href_link='https://developers.google.com/web/fundamentals/primers/promises', id_skill=38;
+INSERT INTO Helpful_links SET Title_link='MDN - Promise', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise', id_skill=38;
+INSERT INTO Helpful_links SET Title_link='Master the JavaScript Interview: What is a Promise?', Href_link='https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-promise-27fc71e77261', id_skill=38;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Callback function', Href_link='https://developer.mozilla.org/en-US/docs/Glossary/Callback_function', id_skill=39;
+INSERT INTO Helpful_links SET Title_link='JavaScript: What the heck is a Callback?', Href_link='https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced', id_skill=39;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Callbacks', Href_link='https://javascript.info/callbacks', id_skill=39;
+
+INSERT INTO Helpful_links SET Title_link='MDN - async function', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function', id_skill=40;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Async functions', Href_link='https://developers.google.com/web/fundamentals/primers/async-functions', id_skill=40;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Async/await', Href_link='https://javascript.info/async-await', id_skill=40;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Introduction to fetch', Href_link='https://developers.google.com/web/updates/2015/03/introduction-to-fetch', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Networking', Href_link='https://developers.google.com/training/certification/mobile-web-specialist/study-guide/networking', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - Fetch practical guide', Href_link='https://www.freecodecamp.org/news/a-practical-es6-guide-on-how-to-perform-http-requests-using-the-fetch-api-594c3d91a547/', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='MDN - CORS', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='Alligator - Fetch API', Href_link='https://alligator.io/js/fetch-api/', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='Supercharged - Fetch', Href_link='https://www.youtube.com/watch?v=GiI77ya60yk', id_skill=41;
+INSERT INTO Helpful_links SET Title_link='Codelabs - Fetch', Href_link='https://codelabs.developers.google.com/codelabs/pwa-fetch/index.html?index=..%2F..dev-pwa-training#0', id_skill=41;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Animations', Href_link='https://developers.google.com/web/fundamentals/design-and-ux/animations', id_skill=42;
+INSERT INTO Helpful_links SET Title_link='MDN - Using The Web Animations API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API', id_skill=42;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - CSS Animations vs Web Animations API', Href_link='https://css-tricks.com/css-animations-vs-web-animations-api/', id_skill=42;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Export', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export', id_skill=43;
+INSERT INTO Helpful_links SET Title_link='MDN - Import', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import', id_skill=43;
+INSERT INTO Helpful_links SET Title_link='V8 - Modules', Href_link='https://v8.dev/features/modules', id_skill=43;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - A Practical guide to ES6 modules', Href_link='https://www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/', id_skill=43;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Intl', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl', id_skill=44;
+INSERT INTO Helpful_links SET Title_link='MDN - Date Time Format', Href_link='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat', id_skill=44;
+INSERT INTO Helpful_links SET Title_link='New Intl APIs in JavaScript', Href_link='https://blog.bitsrc.io/new-intl-apis-in-javascript-c50dc89d2cf3', id_skill=44;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Canvas tutorial', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial', id_skill=45;
+INSERT INTO Helpful_links SET Title_link='MDN - Canvas API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API', id_skill=45;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Manipulating Pixels Using Canvas', Href_link='https://css-tricks.com/manipulating-pixels-using-canvas/', id_skill=45;
+
+INSERT INTO Helpful_links SET Title_link='Getting Started with JSDoc', Href_link='https://jsdoc.app/about-getting-started.html', id_skill=46;
+INSERT INTO Helpful_links SET Title_link='A beginner’s guide to writing documentation', Href_link='https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/', id_skill=46;
+INSERT INTO Helpful_links SET Title_link='Write Good Documentation', Href_link='https://hackernoon.com/write-good-documentation-6caffb9082b4', id_skill=46;
+INSERT INTO Helpful_links SET Title_link='The power of jsDoc', Href_link='https://dev.to/gmartigny/the-power-of-jsdoc-272d', id_skill=46;
+INSERT INTO Helpful_links SET Title_link='Document your Javascript code with JSDoc', Href_link='https://dev.to/paulasantamaria/document-your-javascript-code-with-jsdoc-2fbf', id_skill=46;
+
+INSERT INTO Helpful_links SET Title_link='MDN - JavaScript guidelines', Href_link='https://developer.mozilla.org/en-US/docs/MDN/Contribute/Guidelines/Code_guidelines/JavaScript', id_skill=47;
+INSERT INTO Helpful_links SET Title_link='Airbnb - JavaScript Style Guide', Href_link='https://github.com/airbnb/javascript', id_skill=47;
+INSERT INTO Helpful_links SET Title_link='Principles of Writing Consistent, Idiomatic JavaScript', Href_link='https://github.com/rwaldron/idiomatic.js/', id_skill=47;
+INSERT INTO Helpful_links SET Title_link='5 JavaScript Style Guides', Href_link='https://codeburst.io/5-javascript-style-guides-including-airbnb-github-google-88cbc6b2b7aa', id_skill=47;
+INSERT INTO Helpful_links SET Title_link='JavaScript Style Guide and Coding Conventions', Href_link='https://www.w3schools.com/js/js_conventions.asp', id_skill=47;
+
+INSERT INTO Helpful_links SET Title_link='Wikipedia - Web Standards', Href_link='https://en.wikipedia.org/wiki/Web_standards', id_skill=48;
+INSERT INTO Helpful_links SET Title_link='What Are Web Standards?', Href_link='https://www.elcom.com.au/resources/blog/web-standards', id_skill=48;
+INSERT INTO Helpful_links SET Title_link='A Comprehensive Explanation of Web Standards', Href_link='https://robertnyman.com/2007/05/21/what-are-web-standards-a-comprehensive-explanation-of-what-is-comprised-in-the-term/', id_skill=48;
+
+INSERT INTO Helpful_links SET Title_link='W3C - About', Href_link='https://www.w3.org/standards/about.html', id_skill=49;
+INSERT INTO Helpful_links SET Title_link='W3C - Standards', Href_link='https://www.w3.org/standards/', id_skill=49;
+INSERT INTO Helpful_links SET Title_link='W3C - Process', Href_link='http://webdiy.org/w3c/', id_skill=49;
+INSERT INTO Helpful_links SET Title_link='Web Standards Guide', Href_link='https://www.smashingmagazine.com/2019/01/web-standards-guide/', id_skill=49;
+INSERT INTO Helpful_links SET Title_link='W3C - Groups', Href_link='https://www.w3.org/community/groups/', id_skill=49;
+INSERT INTO Helpful_links SET Title_link='The W3C At Twenty-Five', Href_link='https://www.smashingmagazine.com/2019/10/happy-birthday-w3c/', id_skill=49;
+
+INSERT INTO Helpful_links SET Title_link='The TC39 process for ECMAScript features', Href_link='https://2ality.com/2015/11/tc39-process.html', id_skill=50;
+INSERT INTO Helpful_links SET Title_link='Github - TC39', Href_link='https://github.com/tc39', id_skill=50;
+INSERT INTO Helpful_links SET Title_link='Ecma International - Programme of work', Href_link='https://www.ecma-international.org/memento/tc39.htm', id_skill=50;
+INSERT INTO Helpful_links SET Title_link='Wikipedia - Ecma International', Href_link='https://en.wikipedia.org/wiki/Ecma_International', id_skill=50;
+
+INSERT INTO Helpful_links SET Title_link='WHATWG - FAQ', Href_link='https://whatwg.org/faq', id_skill=51;
+INSERT INTO Helpful_links SET Title_link='WHATWG - Standards', Href_link='https://spec.whatwg.org/', id_skill=51;
+INSERT INTO Helpful_links SET Title_link='MDN - WHATWG', Href_link='https://developer.mozilla.org/en-US/docs/Glossary/WHATWG', id_skill=51;
+INSERT INTO Helpful_links SET Title_link='W3C vs. WHATWG HTML5 Specs', Href_link='https://dzone.com/articles/w3c-vs-whatwg-html5-specs', id_skill=51;
+INSERT INTO Helpful_links SET Title_link='WHATWG - HTML', Href_link='https://html.spec.whatwg.org/', id_skill=51;
+INSERT INTO Helpful_links SET Title_link='Wikipedia - WHATWG', Href_link='https://en.wikipedia.org/wiki/WHATWG', id_skill=51;
+
+INSERT INTO Helpful_links SET Title_link='How to Read the ECMAScript Specification', Href_link='https://timothygu.me/es-howto/', id_skill=52;
+INSERT INTO Helpful_links SET Title_link='How to Read W3C Specs', Href_link='https://alistapart.com/article/readspec/', id_skill=52;
+INSERT INTO Helpful_links SET Title_link='Learning CSS by reading specs', Href_link='https://www.chenhuijing.com/blog/learning-css-by-reading-specifications/', id_skill=52;
+INSERT INTO Helpful_links SET Title_link='Understanding the CSS Specifications', Href_link='https://www.w3.org/Style/CSS/read.en.html', id_skill=52;
+
+
+INSERT INTO Helpful_links SET Title_link='Medium - Browser Engines', Href_link='https://medium.com/@jonbiro/browser-engines-chromium-v8-blink-gecko-webkit-98d6b0490968', id_skill=53;
+INSERT INTO Helpful_links SET Title_link='Wikipedia - Comparison', Href_link='https://en.wikipedia.org/wiki/Comparison_of_browser_engines', id_skill=53;
+INSERT INTO Helpful_links SET Title_link='HTML5 Rocks - How Browsers Work', Href_link='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/', id_skill=53;
+INSERT INTO Helpful_links SET Title_link='Demystifying Browsers', Href_link='https://textslashplain.com/2020/02/09/demystifying-browsers/', id_skill=53;
+
+INSERT INTO Helpful_links SET Title_link='Webkit', Href_link='https://webkit.org/', id_skill=54;
+
+INSERT INTO Helpful_links SET Title_link='Blink', Href_link='https://en.wikipedia.org/wiki/Blink_(browser_engine)', id_skill=55;
+
+INSERT INTO Helpful_links SET Title_link='Gecko', Href_link='https://en.wikipedia.org/wiki/Gecko_(software)', id_skill=56;
+
+INSERT INTO Helpful_links SET Title_link='MDN - HTTP', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTTP', id_skill=57;
+INSERT INTO Helpful_links SET Title_link='MDN - HTTP Glossary', Href_link='https://developer.mozilla.org/en-US/docs/Glossary/HTTP', id_skill=57;
+INSERT INTO Helpful_links SET Title_link='MDN - An overview of HTTP', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview', id_skill=57;
+INSERT INTO Helpful_links SET Title_link='Wikipedia - Hypertext Transfer Protocol', Href_link='https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol', id_skill=57;
+
+INSERT INTO Helpful_links SET Title_link='MDN - How does the Internet work?', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work', id_skill=58;
+INSERT INTO Helpful_links SET Title_link='Youtube - How the Internet Works in 5 Minutes', Href_link='https://www.youtube.com/watch?v=7_LPdttKXPc', id_skill=58;
+INSERT INTO Helpful_links SET Title_link='Explain That Stuff - Internet', Href_link='https://www.explainthatstuff.com/internet.html', id_skill=58;
+INSERT INTO Helpful_links SET Title_link='Stanford - How Does the Internet Work?', Href_link='https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm', id_skill=58;
+INSERT INTO Helpful_links SET Title_link='How the Internet Works', Href_link='https://blog.hubspot.com/marketing/how-the-internet-works', id_skill=58;
+
+
+INSERT INTO Helpful_links SET Title_link='MDN - Polyfill', Href_link='https://developer.mozilla.org/en-US/docs/Glossary/Polyfill', id_skill=59;
+INSERT INTO Helpful_links SET Title_link='Introduction To Polyfills & Their Usage', Href_link='https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-polyfills-their-usage-9cd6db4b1923', id_skill=59;
+INSERT INTO Helpful_links SET Title_link='W3C - Polyfills and the evolution of the Web', Href_link='https://www.w3.org/2001/tag/doc/polyfills/', id_skill=59;
+INSERT INTO Helpful_links SET Title_link='Can I use', Href_link='http://caniuse.com/', id_skill=59;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Inspect and Edit Pages and Styles', Href_link='https://developers.google.com/web/tools/chrome-devtools/inspect-styles/', id_skill=60;
+INSERT INTO Helpful_links SET Title_link='MDN - Cross browser testing', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing', id_skill=60;
+INSERT INTO Helpful_links SET Title_link='5 things to remember for better debugging of your code', Href_link='https://medium.com/dev-bits/5-things-to-remember-for-better-debugging-of-your-code-94b9bc3fb3df', id_skill=60;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Console', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Console', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Console API Reference', Href_link='https://developers.google.com/web/tools/chrome-devtools/console/api', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Get Started with Chrome DevTools', Href_link='https://developers.google.com/web/tools/chrome-devtools/javascript', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Console Utilities API Reference', Href_link='https://developers.google.com/web/tools/chrome-devtools/console/utilities', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='MDN - Debugging CSS', Href_link='https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='MDN - Debugging HTML', Href_link='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Debugging in Chrome', Href_link='https://javascript.info/debugging-chrome', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='14 JavaScript debugging tips', Href_link='https://raygun.com/javascript-debugging-tips', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='The definitive guide to debugging JavaScript', Href_link='https://flaviocopes.com/javascript-debugging/', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Youtube - Chrome DevTools 101', Href_link='https://www.youtube.com/watch?v=H0XScE08hy8', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Chrome Devs - Quickly monitor events', Href_link='https://developers.google.com/web/updates/2015/05/quickly-monitor-events-from-the-console-panel', id_skill=61;
+INSERT INTO Helpful_links SET Title_link='Youtube - 14 Must Know Chrome Dev Tools Tricks', Href_link='https://www.youtube.com/watch?v=xkzDaKwinA8', id_skill=61;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Accessibility Fundamentals', Href_link='https://developers.google.com/web/fundamentals/accessibility/', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='A11ycasts with Rob Dodson', Href_link='https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='Udacity - Chromevox Lite', Href_link='http://udacity.github.io/ud891/lesson3-semantics-built-in/02-chromevox-lite/', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='Dev.to - Why Accessibility Matters', Href_link='https://dev.to/lhoffmanwg1/why-accessibility-matters-39nl', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='Abilitynet - Why Accessibility Matters', Href_link='https://www.abilitynet.org.uk/why-accessibility-matters', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='Udacity - Web Accessibility', Href_link='https://www.udacity.com/course/web-accessibility--ud891', id_skill=62;
+INSERT INTO Helpful_links SET Title_link='Youtube - Headings, Landmarks, and Tabs', Href_link='https://www.youtube.com/watch?v=HE2R86EZPMA', id_skill=62;
+
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - Screen Reader Myths, and Tabs', Href_link='https://a11yproject.com/posts/people-who-use-screen-readers-dont-use-javascript/', id_skill=63;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - NVDA Screen Reader', Href_link='https://a11yproject.com/posts/getting-started-with-nvda/', id_skill=63;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - OS X Voiceover', Href_link='https://a11yproject.com/posts/getting-started-with-voiceover/', id_skill=63;
+INSERT INTO Helpful_links SET Title_link='Webaim - Screen Reader Survey', Href_link='https://webaim.org/projects/screenreadersurvey7/', id_skill=63;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - The Accessibility Tree', Href_link='https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/the-accessibility-tree', id_skill=64;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - ARIA Labels', Href_link='https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships', id_skill=65;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Hiding and updating content', Href_link='https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content', id_skill=65;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - ARIA States', Href_link='https://a11yproject.com/posts/ARIA-states/', id_skill=65;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - ARIA Properties', Href_link='https://a11yproject.com/posts/ARIA-properties/', id_skill=65;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Introduction to Semantics', Href_link='https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/', id_skill=66;
+INSERT INTO Helpful_links SET Title_link='MDN - Accessibility HTML', Href_link='https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML', id_skill=66;
+INSERT INTO Helpful_links SET Title_link='Webaim - Skip navigation', Href_link='https://webaim.org/techniques/skipnav/', id_skill=66;
+INSERT INTO Helpful_links SET Title_link='W3C - Headings', Href_link='https://www.w3.org/WAI/tutorials/page-structure/headings/', id_skill=66;
+INSERT INTO Helpful_links SET Title_link='Freecodecamp - Semantic Elements', Href_link='https://guide.freecodecamp.org/html/html5-semantic-elements/', id_skill=66;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Text Alternatives for Images', Href_link='https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/text-alternatives-for-images', id_skill=67;
+INSERT INTO Helpful_links SET Title_link='Webaim - Accessible Images', Href_link='https://webaim.org/techniques/images/', id_skill=67;
+INSERT INTO Helpful_links SET Title_link='Webaim - Alternative text', Href_link='https://webaim.org/techniques/alttext/', id_skill=67;
+
+INSERT INTO Helpful_links SET Title_link='Webaim - CSS', Href_link='https://webaim.org/techniques/css/', id_skill=68;
+
+INSERT INTO Helpful_links SET Title_link='Webaim - Forms', Href_link='https://webaim.org/techniques/forms/', id_skill=69;
+INSERT INTO Helpful_links SET Title_link='Itnext - Form Accessibility Gudie', Href_link='https://itnext.io/form-accessibility-a-practical-guide-4062b7e2dd14', id_skill=69;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Accessible Styles', Href_link='https://developers.google.com/web/fundamentals/accessibility/accessible-styles', id_skill=70;
+
+INSERT INTO Helpful_links SET Title_link='Webaim - Keyboard', Href_link='https://webaim.org/techniques/keyboard/', id_skill=71;
+INSERT INTO Helpful_links SET Title_link='Smashing Magazine - Web with just a keyboard', Href_link='https://www.smashingmagazine.com/2018/07/web-with-just-a-keyboard/', id_skill=71;
+
+INSERT INTO Helpful_links SET Title_link='Web.dev - Control focus with tabindex', Href_link='https://web.dev/control-focus-with-tabindex/', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Focus', Href_link='https://developers.google.com/web/fundamentals/accessibility/focus/', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Dom Order Matters', Href_link='https://developers.google.com/web/fundamentals/accessibility/focus/dom-order-matters', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Using Tabindex', Href_link='https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Track Focus', Href_link='https://developers.google.com/web/tools/chrome-devtools/accessibility/focus', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='MDN - :focus-visible', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible', id_skill=72;
+INSERT INTO Helpful_links SET Title_link='MDN - :focus-within', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within', id_skill=72;
+
+INSERT INTO Helpful_links SET Title_link='Webaim - Contrast and Color', Href_link='https://webaim.org/articles/contrast/', id_skill=73;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - Check contrast', Href_link='https://a11yproject.com/posts/check-contrast-with-mobile-device/', id_skill=73;
+INSERT INTO Helpful_links SET Title_link='The A11Y Project - What is color contrast?', Href_link='https://a11yproject.com/posts/what-is-color-contrast/', id_skill=73;
+INSERT INTO Helpful_links SET Title_link='Designing accessible color systems', Href_link='https://stripe.com/en-dk/blog/accessible-color-systems', id_skill=73;
+
+INSERT INTO Helpful_links SET Title_link='W3C - Laws & Policies', Href_link='https://www.w3.org/WAI/policies/', id_skill=74;
+INSERT INTO Helpful_links SET Title_link='Webaim - Laws around the world', Href_link='https://webaim.org/articles/laws/world/', id_skill=74;
+INSERT INTO Helpful_links SET Title_link='Webaim - Section 508', Href_link='https://webaim.org/standards/508/checklist', id_skill=74;
+INSERT INTO Helpful_links SET Title_link='Webaim - WCAG 2 Checklist', Href_link='https://webaim.org/standards/wcag/checklist', id_skill=74;
+INSERT INTO Helpful_links SET Title_link='A11Y.dev - Lawsuits', Href_link='https://a11y.dev/470-digital-accessibility-cases-were-filed-in-q3-2018/', id_skill=74;
+
+INSERT INTO Helpful_links SET Title_link='Web.dev - Accessibility audits', Href_link='https://web.dev/lighthouse-accessibility', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Google Devs - How to review', Href_link='https://developers.google.com/web/fundamentals/accessibility/how-to-review', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Webaim - Accessibility Tools', Href_link='https://webaim.org/articles/tools/', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Accessibility Reference', Href_link='https://developers.google.com/web/tools/chrome-devtools/accessibility/reference', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Webaim - Wave', Href_link='http://wave.webaim.org/', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Google Chrome - NoCoffee Extension', Href_link='https://chrome.google.com/webstore/detail/nocoffee/jjeeggmbnhckmgdhmgdckeigabjfbddl', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Digital A11Y - Accessibility Plugins', Href_link='https://www.digitala11y.com/accessibility-plug-ins-ie-chrome-firefox-browsers/', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Accessibility for teams', Href_link='https://developers.google.com/web/fundamentals/accessibility/a11y-for-teams', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='WCAG 2.0 checklists', Href_link='https://www.wuhcag.com/wcag-checklist/', id_skill=75;
+INSERT INTO Helpful_links SET Title_link='How to Meet WCAG (Quick Reference)', Href_link='https://www.w3.org/WAI/WCAG21/quickref/', id_skill=75;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Custom Elements', Href_link='https://developers.google.com/web/fundamentals/web-components/customelements', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='MDN - Using Custom Elements', Href_link='https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Creating a Custom Element from Scratch', Href_link='https://css-tricks.com/creating-a-custom-element-from-scratch/', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Custom Elements', Href_link='https://javascript.info/custom-elements', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='Dev.to - An introduction to Custom Elements', Href_link='https://dev.to/jamesrweb/an-introduction-to-custom-elements-5327', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='Itnext - Introduction to Web Components', Href_link='https://itnext.io/introduction-to-web-components-part-i-custom-elements-4de6713cef9d', id_skill=76;
+INSERT INTO Helpful_links SET Title_link='Web.dev - Web Components', Href_link='https://web.dev/web-components-io-2019/', id_skill=76;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Using Templates & Slots', Href_link='https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots', id_skill=77;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Template Element', Href_link='https://javascript.info/template-element', id_skill=77;
+INSERT INTO Helpful_links SET Title_link='MDN - The Content Template element', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template', id_skill=77;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Shadow DOM', Href_link='https://developers.google.com/web/fundamentals/web-components/shadowdom', id_skill=78;
+INSERT INTO Helpful_links SET Title_link='MDN - Using Shadow DOM', Href_link='https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM', id_skill=78;
+INSERT INTO Helpful_links SET Title_link='MDN - Shadow Tree', Href_link='https://developer.mozilla.org/en-US/docs/Glossary/Shadow_tree', id_skill=78;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Encapsulating Style and Structure', Href_link='https://css-tricks.com/encapsulating-style-and-structure-with-shadow-dom/', id_skill=78;
+INSERT INTO Helpful_links SET Title_link='Itnext - Introduction to Web Components', Href_link='https://itnext.io/introduction-to-web-components-part-ii-shadow-dom-8d1d8e126332', id_skill=78;
+INSERT INTO Helpful_links SET Title_link='Monica - Shadow DOM: fast and encapsulated styles', Href_link='https://meowni.ca/posts/shadow-dom/', id_skill=78;
+
+INSERT INTO Helpful_links SET Title_link='Fergald - CSS Shadow ::part and ::theme', Href_link='https://github.com/fergald/docs/blob/master/explainers/css-shadow-parts-1.md', id_skill=79;
+INSERT INTO Helpful_links SET Title_link='MDN - ::part', Href_link='https://developer.mozilla.org/en-US/docs/Web/CSS/::part', id_skill=79;
+INSERT INTO Helpful_links SET Title_link='W3C - CSS Shadow Parts', Href_link='https://www.w3.org/TR/css-shadow-parts-1/', id_skill=79;
+INSERT INTO Helpful_links SET Title_link='Monica - ::part and ::theme, an explainer', Href_link='https://meowni.ca/posts/part-theme-explainer/', id_skill=79;
+INSERT INTO Helpful_links SET Title_link='Youtube - CSS Shadow Parts', Href_link='https://www.youtube.com/watch?v=yVrvOueeb3s', id_skill=79;
+INSERT INTO Helpful_links SET Title_link='Chrome Status - ::part and ::theme', Href_link='https://www.chromestatus.com/features/5763933658939392', id_skill=79;
+
+
+INSERT INTO Helpful_links SET Title_link='Alligator.io - Composing Custom Elements', Href_link='https://alligator.io/web-components/composing-slots-named-slots/', id_skill=80;
+INSERT INTO Helpful_links SET Title_link='Javascript.info - Slots Composition', Href_link='https://javascript.info/slots-composition', id_skill=80;
+INSERT INTO Helpful_links SET Title_link='MDN - HTML slot element', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot', id_skill=80;
+INSERT INTO Helpful_links SET Title_link='Component.kitchen - A history of the HTML slot element', Href_link='https://component.kitchen/blog/posts/a-history-of-the-html-slot-element', id_skill=80;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Custom Element Best Practices', Href_link='https://developers.google.com/web/fundamentals/web-components/best-practices', id_skill=81;
+INSERT INTO Helpful_links SET Title_link='Webcomponents.org - Web Components Best Practices', Href_link='https://www.webcomponents.org/community/articles/web-components-best-practices', id_skill=81;
+INSERT INTO Helpful_links SET Title_link='mateusortiz - Web Components the Right Way', Href_link='https://github.com/mateusortiz/webcomponents-the-right-way', id_skill=81;
+INSERT INTO Helpful_links SET Title_link='dev.to - Making Web Components for Different Contexts', Href_link='https://dev.to/equinusocio/making-web-components-for-different-contexts-25ed', id_skill=81;
+
+INSERT INTO Helpful_links SET Title_link='Google Devs - Constructable Stylesheets', Href_link='https://developers.google.com/web/updates/2019/02/constructable-stylesheets', id_skill=82;
+INSERT INTO Helpful_links SET Title_link='W3C - Constructable Stylesheet Objects', Href_link='https://wicg.github.io/construct-stylesheets/', id_skill=82;
+INSERT INTO Helpful_links SET Title_link='dev.to - Why Would Anyone Use Constructible Stylesheets', Href_link='https://dev.to/westbrook/why-would-anyone-use-constructible-stylesheets-anyways-19ng', id_skill=82;
+INSERT INTO Helpful_links SET Title_link='Benjamin Farrel - Adopt a Design System', Href_link='https://medium.com/swlh/adopt-a-design-system-inside-your-web-components-with-constructable-stylesheets-dd24649261e', id_skill=82;
+INSERT INTO Helpful_links SET Title_link='WICG - Constructable Stylesheet Objects', Href_link='https://github.com/WICG/construct-stylesheets/blob/gh-pages/explainer.md', id_skill=82;
+INSERT INTO Helpful_links SET Title_link='Chrome Status - Constructible Stylesheets', Href_link='https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example', id_skill=82;
+
+INSERT INTO Helpful_links SET Title_link='Form Participation API Explained', Href_link='https://docs.google.com/document/d/1JO8puctCSpW-ZYGU8lF-h4FWRIDQNDVexzHoOQ2iQmY/edit', id_skill=83;
+INSERT INTO Helpful_links SET Title_link='Chrome Status - Form-associated custom elements', Href_link='https://www.chromestatus.com/features/4708990554472448', id_skill=83;
+INSERT INTO Helpful_links SET Title_link='web-platform-tests - Form Participation', Href_link='https://github.com/web-platform-tests/wpt/tree/master/custom-elements/form-associated', id_skill=83;
+INSERT INTO Helpful_links SET Title_link='Google Devs - Form-associated custom elements', Href_link='https://developers.google.com/web/updates/2019/09/nic77#form-associated_custom_elements', id_skill=83;
+INSERT INTO Helpful_links SET Title_link='web.dev - More capable form controls', Href_link='https://web.dev/more-capable-form-controls/', id_skill=83;
+INSERT INTO Helpful_links SET Title_link='W3C - Creating a form-associated custom element', Href_link='https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements-face-example', id_skill=83;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Storage', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Storage_API', id_skill=84;
+INSERT INTO Helpful_links SET Title_link='MDN - Web Storage API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API', id_skill=84;
+INSERT INTO Helpful_links SET Title_link='MDN - Cookies', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies', id_skill=84;
+INSERT INTO Helpful_links SET Title_link='MDN - IndexedDB API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API', id_skill=84;
+INSERT INTO Helpful_links SET Title_link='Google Devs - View And Edit Local Storage', Href_link='https://developers.google.com/web/tools/chrome-devtools/storage/localstorage', id_skill=84;
+INSERT INTO Helpful_links SET Title_link='MDN - Client-side storage', Href_link='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage', id_skill=84;
+
+INSERT INTO Helpful_links SET Title_link='How Single-Page Applications Work', Href_link='https://blog.pshrmn.com/how-single-page-applications-work/', id_skill=85;
+INSERT INTO Helpful_links SET Title_link='Static Apps - Routing URLs in Static Web Apps', Href_link='https://staticapps.org/articles/routing-urls-in-static-apps/', id_skill=85;
+INSERT INTO Helpful_links SET Title_link='Routing With Single Page Applications or Client Side Routing', Href_link='https://pennyforyourcode.com/tldr-routing-with-single-page-applications-or-client-side-routing-327626cdc5dd', id_skill=85;
+
+INSERT INTO Helpful_links SET Title_link='MDN - Working with the History API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/History_API/Working_with_the_History_API', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='MDN - History API', Href_link='https://developer.mozilla.org/en-US/docs/Web/API/History_API', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='Single-page application routing in vanilla JavaScript', Href_link='https://medium.com/@george.norberg/history-api-getting-started-36bfc82ddefc', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='CSS Tricks - Using the HTML5 History API', Href_link='https://css-tricks.com/using-the-html5-history-api/', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='The History API', Href_link='https://flaviocopes.com/history-api/', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='Google Devs - History API: Scroll Restoration', Href_link='https://developers.google.com/web/updates/2015/09/history-api-scroll-restoration', id_skill=86;
+INSERT INTO Helpful_links SET Title_link='MDN - The Document Base URL element', Href_link='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base', id_skill=86;
 
 INSERT INTO Users SET Name_User ='Alex', Surname_User='Alexov', NickName_User='Alex111', Login_User='alex@mail.ru', Password_User='123qwe', id_role=1;
 INSERT INTO Users SET Name_User ='Boris', Surname_User='Borisov', NickName_User='Boris222', Login_User='borya221@mail.ru', Password_User='123asd', id_role=2;
@@ -520,4 +958,4 @@ INSERT INTO Users SET Name_User ='Chief', Surname_User='Chiefov', NickName_User=
 
 
 
-DROP DATABASE `NoikerSkills`;
+DROP DATABASE `cz12893_noiker`;

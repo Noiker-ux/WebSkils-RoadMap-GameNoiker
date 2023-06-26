@@ -73,9 +73,6 @@ function get_favicon($url){
             $Sections = 'SELECT * FROM NoikerSkills.Areas;';
             $SectionQuery = mysqli_query($connection, $Sections);
             $NumberSection = 1;
-
-
-
             while ($Section = mysqli_fetch_array($SectionQuery)) {
                 echo"<section class='collection'>
                         <h1 class='collection__title'>".$NumberSection++.". ".$Section['Title_area']."</h1>
