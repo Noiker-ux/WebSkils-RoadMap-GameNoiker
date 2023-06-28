@@ -1,5 +1,6 @@
 @import url('./darkMode.css');
 @import url('./header.css');
+@import url('./sayHi.css');
 
 @font-face {
   font-family: 'Rubic';

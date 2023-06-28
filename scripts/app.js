@@ -67,4 +67,66 @@ window.addEventListener('DOMContentLoaded',()=>{
         })
     })
    // ===================== Конец замута с подсказкой при наведении ========================================
+  // ====================== Замут  с блоком say hi =========================================================
+
+
+
+
+  const sayhi=`
+  <div class="sayHi__block" style="display: none; width: 700px;">
+    <div class="say_wrapper">
+        <div class="social__item">
+            <a class="social__item-link" href="http://noiker.ru/">
+                <img src="./images/copy (1).svg" alt="Copy" class="social__item-img">
+                <p class="social__item-title">Copy</p>
+            </a>
+        </div>
+        <div class="social__item">
+            <a class="social__item-link" href="https://github.com/Noiker-ux">
+                <img src="./images/github-hi.png" alt="Copy" class="social__item-img">
+                <p class="social__item-title">Github</p>
+            </a>
+        </div>
+        <div class="social__item">
+            <a class="social__item-link" href="https://vk.com/noiker">
+                <img src="./images/vk.svg" alt="Copy" class="social__item-img">
+                <p class="social__item-title">ВКонтакте</p>
+            </a>
+        </div>
+        <div class="social__item">
+            <a class="social__item-link" href="https://t.me/+79965224284">
+                <img src="./images/telegram.png" alt="Copy" class="social__item-img">
+                <p class="social__item-title">Telegram</p>
+            </a>
+        </div>
+        <div class="social__item">
+            <a class="social__item-link" href="mailto:noiker01@mail.ru">
+                <img src="./images/email.svg" alt="Copy" class="social__item-img">
+                <p class="social__item-title">Email</p>
+            </a>
+        </div>
+    </div>
+</div>
+  `;
+
+
+
+
+  document.getElementById('sayHi__btn').addEventListener('click',()=>{
+    $.fancybox.open({
+        src: sayhi,
+        type: 'inline',
+    });
+})
+
+
+function Copy() {
+    var Url = document.getElementById("url");
+    Url.innerHTML = window.location.href;
+    console.log(Url.innerHTML)
+    Url.select();
+    document.execCommand("copy");
+  }
+
+ // ====================== Конец замута с блоком say hi =========================================================    
 });

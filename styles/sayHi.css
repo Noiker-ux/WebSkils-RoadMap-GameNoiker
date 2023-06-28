@@ -1,0 +1,35 @@
+.sayHi__block{
+    max-width: 500px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    padding: 35px 15px;
+}
+ .social__item-img{
+    width: 60px;
+    height: 60px;
+}
+.social__item-img:hover{
+    filter: opacity(0.8);
+}
+
+.social__item{
+    text-align: center;
+}
+
+
+.say_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social__item-title{
+    margin-top: 5px;
+    color: rgb(170, 170, 170);
+
+}
+.social__item-link{
+    text-decoration: none;
+}
